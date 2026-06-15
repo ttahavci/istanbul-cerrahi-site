@@ -1371,3 +1371,16 @@ body.dark-mode .profile-panel h2,body.dark-mode .profile-panel h3,body.dark-mode
 body.dark-mode .profile-panel p{color:rgba(255,255,255,.72);}
 body.dark-mode .profile-timeline-item span{color:rgba(255,255,255,.52);}
 body.dark-mode .unit-step-actions a,body.dark-mode .unit-step-actions button{background:#121d36;color:#fff;border-color:rgba(255,255,255,.14);}
+
+
+/* GitHub Pages multi-page visibility fix */
+body.page-about #aboutDetailPage,
+body.page-units #unitsDetailPage,
+body.page-doctors #doctorsDetailPage,
+body.page-blog #blogDetailPage,
+body.page-patients #patientGuidePage{display:block!important;}
+body.page-about #homePage,
+body.page-units #homePage,
+body.page-doctors #homePage,
+body.page-blog #homePage,
+body.page-patients #homePage{display:none!important;}

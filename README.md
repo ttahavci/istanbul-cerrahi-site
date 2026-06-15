@@ -212,3 +212,8 @@ Canlıya geçmeden önce aşağıdaki kontrollerin yapılması önerilir:
 ## Proje Durumu
 
 Bu repository, kurumsal web sitesi için hazırlanmış çok sayfalı ön yüz başlangıç yapısını içerir. Nihai canlı kullanım öncesinde geliştirici tarafından backend, CMS, form işleyişi, kullanıcı yetkilendirme, SEO ve hosting yapılandırmalarının tamamlanması gerekir.
+
+
+## GitHub Pages Notu
+
+Proje sayfa sayfa ayrılmıştır. Alt sayfalardaki içeriklerin görünmesi için `body` sınıfları yapılandırılmıştır (`page-about`, `page-units`, `page-doctors`, `page-blog`, `page-patients`). GitHub Pages üzerinde `main / root` yayını için doğrudan kullanılabilir.
