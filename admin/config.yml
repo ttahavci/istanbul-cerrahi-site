@@ -1,60 +1,141 @@
+# Özel İstanbul Cerrahi Hastanesi - Yönetim Paneli Config
+# CMS altyapısı: Decap CMS starter config
+# Web geliştirici notu:
+# - GitHub Pages üzerinde login için GitHub OAuth proxy gerekir.
+# - Netlify/Vercel/özel sunucu tercihine göre backend alanı güncellenmelidir.
+
 backend:
   name: github
-  repo: YOUR_GITHUB_USER/YOUR_REPO_NAME
+  repo: ttahavci/istanbul-cerrahi-site
   branch: main
+  # GitHub OAuth proxy bağlanınca aşağıdaki değerler aktif edilmeli/güncellenmelidir:
+  # base_url: https://AUTH_BACKEND_DOMAIN
+  # auth_endpoint: auth
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+# Eğer proje Netlify üzerinde Git Gateway ile yönetilecekse backend bloğu şöyle değiştirilebilir:
+# backend:
+#   name: git-gateway
+#   branch: main
+
+local_backend: true
+publish_mode: editorial_workflow
+
+media_folder: "assets/img/uploads"
+public_folder: "/istanbul-cerrahi-site/assets/img/uploads"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
 
 collections:
   - name: "duyurular"
     label: "Duyurular"
+    label_singular: "Duyuru"
     folder: "content/duyurular"
     create: true
     slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
     fields:
-      - {label: "Başlık", name: "title", widget: "string"}
-      - {label: "Kısa Açıklama", name: "summary", widget: "text"}
-      - {label: "Tip", name: "type", widget: "select", options: ["Randevu", "Kurumsal", "SGK", "Genel"]}
-      - {label: "Aktif", name: "active", widget: "boolean", default: true}
-      - {label: "Sıralama", name: "order", widget: "number", default: 1}
-      - {label: "Yayın Tarihi", name: "date", widget: "datetime"}
+      - { label: "Başlık", name: "title", widget: "string" }
+      - { label: "Kısa Etiket", name: "label", widget: "string", required: false }
+      - { label: "Duyuru Tipi", name: "type", widget: "select", options: ["Randevu", "Kurumsal", "SGK / ÖSS / TSS", "Genel"] }
+      - { label: "Kısa Açıklama", name: "summary", widget: "text" }
+      - { label: "Aktif", name: "active", widget: "boolean", default: true }
+      - { label: "Sıralama", name: "order", widget: "number", default: 1, value_type: "int" }
+      - { label: "İçerik", name: "body", widget: "markdown", required: false }
+
   - name: "hekimler"
     label: "Hekimler"
+    label_singular: "Hekim"
     folder: "content/hekimler"
     create: true
     slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
     fields:
-      - {label: "Ad Soyad", name: "title", widget: "string"}
-      - {label: "Branş", name: "branch", widget: "string"}
-      - {label: "Ünvan", name: "degree", widget: "string", required: false}
-      - {label: "Fotoğraf", name: "photo", widget: "image", required: false}
-      - {label: "Türkçe Sesli CV/Video", name: "video_tr", widget: "string", required: false}
-      - {label: "İngilizce Sesli CV/Video", name: "video_en", widget: "string", required: false}
-      - {label: "Tanıtım Metni", name: "body", widget: "markdown"}
-      - {label: "Uzmanlık Alanları", name: "expertise", widget: "list", required: false}
-      - {label: "Aktif", name: "active", widget: "boolean", default: true}
+      - { label: "Ad Soyad", name: "title", widget: "string" }
+      - { label: "Slug / URL", name: "slug", widget: "string" }
+      - { label: "Ünvan", name: "unvan", widget: "string", required: false }
+      - { label: "Branş", name: "branch", widget: "string" }
+      - { label: "Profil Fotoğrafı", name: "image", widget: "image", required: false }
+      - { label: "Türkçe Sesli CV / Video URL", name: "video_tr", widget: "string", required: false }
+      - { label: "İngilizce Sesli CV / Video URL", name: "video_en", widget: "string", required: false }
+      - { label: "Kısa Tanıtım", name: "summary", widget: "text", required: false }
+      - { label: "Eğitim Bilgileri", name: "education", widget: "list", required: false, field: { label: "Eğitim", name: "item", widget: "string" } }
+      - { label: "Uzmanlık Alanları", name: "expertise", widget: "list", required: false, field: { label: "Alan", name: "item", widget: "string" } }
+      - { label: "Yayınlar / Sertifikalar", name: "certificates", widget: "list", required: false, field: { label: "Kayıt", name: "item", widget: "string" } }
+      - { label: "Aktif", name: "active", widget: "boolean", default: true }
+      - { label: "Özgeçmiş", name: "body", widget: "markdown", required: false }
+
   - name: "tibbi_birimler"
     label: "Tıbbi Birimler"
+    label_singular: "Tıbbi Birim"
     folder: "content/tibbi-birimler"
     create: true
     slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
     fields:
-      - {label: "Başlık", name: "title", widget: "string"}
-      - {label: "Kapak Görseli", name: "image", widget: "image", required: false}
-      - {label: "Kısa Açıklama", name: "summary", widget: "text"}
-      - {label: "Detaylı İçerik", name: "body", widget: "markdown"}
-      - {label: "Aktif", name: "active", widget: "boolean", default: true}
+      - { label: "Birim Adı", name: "title", widget: "string" }
+      - { label: "Slug / URL", name: "slug", widget: "string" }
+      - { label: "Kapak Görseli", name: "image", widget: "image", required: false }
+      - { label: "Kısa Açıklama", name: "summary", widget: "text" }
+      - { label: "Hizmet Kapsamı", name: "services", widget: "list", required: false, field: { label: "Hizmet", name: "item", widget: "string" } }
+      - { label: "Hangi Durumlarda Başvurulur?", name: "indications", widget: "list", required: false, field: { label: "Durum", name: "item", widget: "string" } }
+      - { label: "Aktif", name: "active", widget: "boolean", default: true }
+      - { label: "Detaylı İçerik", name: "body", widget: "markdown" }
+
   - name: "saglik_rehberi"
     label: "Sağlık Rehberi"
+    label_singular: "Yazı"
     folder: "content/saglik-rehberi"
     create: true
     slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
     fields:
-      - {label: "Başlık", name: "title", widget: "string"}
-      - {label: "Kategori", name: "category", widget: "string"}
-      - {label: "Kapak Görseli", name: "image", widget: "image", required: false}
-      - {label: "Özet", name: "summary", widget: "text"}
-      - {label: "İçerik", name: "body", widget: "markdown"}
-      - {label: "SEO Başlığı", name: "seo_title", widget: "string", required: false}
-      - {label: "SEO Açıklaması", name: "seo_description", widget: "text", required: false}
+      - { label: "Başlık", name: "title", widget: "string" }
+      - { label: "Slug / URL", name: "slug", widget: "string" }
+      - { label: "Kategori", name: "category", widget: "select", options: ["Üroloji", "İç Hastalıkları", "Radyoloji", "Genel Cerrahi", "Ağız ve Diş Sağlığı", "Beslenme", "Diğer"] }
+      - { label: "Kapak Görseli", name: "image", widget: "image", required: false }
+      - { label: "Özet", name: "summary", widget: "text" }
+      - { label: "Yayın Tarihi", name: "date", widget: "datetime", required: false }
+      - { label: "SEO Başlığı", name: "seo_title", widget: "string", required: false }
+      - { label: "SEO Açıklaması", name: "seo_description", widget: "text", required: false }
+      - { label: "Aktif", name: "active", widget: "boolean", default: true }
+      - { label: "İçerik", name: "body", widget: "markdown" }
+
+  - name: "hasta_rehberi"
+    label: "Hasta Rehberi"
+    label_singular: "Hasta Rehberi Sayfası"
+    folder: "content/hasta-rehberi"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Başlık", name: "title", widget: "string" }
+      - { label: "Slug / URL", name: "slug", widget: "string" }
+      - { label: "İkon / Görsel", name: "image", widget: "image", required: false }
+      - { label: "Kısa Açıklama", name: "summary", widget: "text" }
+      - { label: "Sıralama", name: "order", widget: "number", default: 1, value_type: "int" }
+      - { label: "Aktif", name: "active", widget: "boolean", default: true }
+      - { label: "İçerik", name: "body", widget: "markdown" }
+
+  - name: "site_ayarlari"
+    label: "Site Ayarları"
+    files:
+      - label: "Genel Bilgiler"
+        name: "site"
+        file: "content/settings/site.yml"
+        fields:
+          - { label: "Site Başlığı", name: "site_title", widget: "string", default: "Özel İstanbul Cerrahi Hastanesi" }
+          - { label: "Telefon", name: "phone", widget: "string", default: "0212 296 94 50" }
+          - { label: "WhatsApp", name: "whatsapp", widget: "string", required: false }
+          - { label: "E-posta", name: "email", widget: "string", required: false }
+          - { label: "Adres", name: "address", widget: "text", required: false }
+          - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - { label: "Facebook", name: "facebook", widget: "string", required: false }
+          - { label: "YouTube", name: "youtube", widget: "string", required: false }
