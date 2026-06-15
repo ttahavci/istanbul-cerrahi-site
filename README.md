@@ -217,3 +217,8 @@ Bu repository, kurumsal web sitesi için hazırlanmış çok sayfalı ön yüz b
 ## GitHub Pages Notu
 
 Proje sayfa sayfa ayrılmıştır. Alt sayfalardaki içeriklerin görünmesi için `body` sınıfları yapılandırılmıştır (`page-about`, `page-units`, `page-doctors`, `page-blog`, `page-patients`). GitHub Pages üzerinde `main / root` yayını için doğrudan kullanılabilir.
+
+
+## Görsel Yönetimi
+
+Projedeki görseller `assets/img/` altında kategorilere ayrılmıştır. Eski siteden referans alınan görseller için kaynak eşleşmeleri `assets/img/_source-map.json` dosyasında tutulur. Geliştirici ortamında orijinal görselleri indirmek için `python3 scripts/download-images.py` komutu çalıştırılabilir. Detaylar için `README-IMAGES.md` dosyasına bakınız.

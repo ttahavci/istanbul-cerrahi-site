@@ -2,7 +2,7 @@
 title: "Uzm. Dr. Elif Gökçen VATANOĞLU"
 branch: "Kardiyoloji"
 degree: ""
-photo: "https://istanbulcerrahi.com/wp-content/uploads/2025/11/dr-elif-gokcen-vatanoglu.webp"
+photo: "../../assets/img/doctors/dr-elif-gokcen-vatanoglu.webp"
 video_tr: ""
 video_en: ""
 expertise: ["Ekokardiyografi", "Kardiyolojik Muayene", "Kalp Yetmezliği", "Hipertansiyon Tedavisi", "Ritim Bozuklukları", "Koroner Arter Hastalıkları"]

@@ -2,7 +2,7 @@
 title: "Prof. Dr. Toygar TOYDEMİR"
 branch: "Genel Cerrahi — Obezite & Reflü Cerrahisi"
 degree: ""
-photo: "https://istanbulcerrahi.com/wp-content/uploads/2025/12/dr-toygar-toydemir.webp"
+photo: "../../assets/img/doctors/dr-toygar-toydemir.webp"
 video_tr: ""
 video_en: ""
 expertise: ["Obezite Cerrahisi", "Sleeve Gastrektomi", "Gastrik Bypass", "Revizyonel Bariatrik Cerrahi", "Reflü Cerrahisi", "Laparoskopik Cerrahi", "Metabolik Cerrahi"]
