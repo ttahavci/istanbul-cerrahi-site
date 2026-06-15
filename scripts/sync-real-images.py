@@ -94,7 +94,7 @@ def extract_image_urls(html: str, page_url: str) -> list[str]:
     urls: set[str] = set()
 
     # src, data-src, data-lazy-src vb.
-    for _, value in re.findall(r'(?:src|data-src|data-lazy-src|data-original)=["\']([^"\']+)["\']', html, flags=re.I):
+    for value in re.findall(r'(?:src|data-src|data-lazy-src|data-original)=["\']([^"\']+)["\']', html, flags=re.I):
         urls.add(urljoin(page_url, value.strip()))
 
     # srcset içindeki tüm URL'ler
