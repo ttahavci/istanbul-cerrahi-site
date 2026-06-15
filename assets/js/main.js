@@ -2,7 +2,7 @@
 // ---- LOCAL ASSET PATH HELPER ----
 function assetPath(path){
   const clean = String(path || '').replace(/^\/+/, '');
-  const script = document.querySelector('script[src$="assets/js/main.js"], script[src*="assets/js/main.js"]');
+  const script = document.querySelector('script[src$="/istanbul-cerrahi-site/assets/js/main.js"], script[src*="/istanbul-cerrahi-site/assets/js/main.js"]');
   if(script && script.src){
     const base = script.src.replace(/assets\/js\/main\.js(?:\?.*)?$/, '');
     return new URL(clean, base).href;
@@ -16,7 +16,7 @@ const doctors = {
   toygar: {
     name: 'Prof. Dr. Toygar TOYDEMİR',
     branch: 'Genel Cerrahi — Obezite & Reflü Cerrahisi',
-    photo: assetPath('assets/img/doctors/dr-toygar-toydemir.webp'),
+    photo: assetPath('/istanbul-cerrahi-site/assets/img/doctors/dr-toygar-toydemir.webp'),
     videoTr: null, // YouTube embed URL buraya gelecek
     videoEn: null,
     introTr: 'Prof. Dr. Toygar TOYDEMİR, Özel İstanbul Cerrahi Hastanesi Genel Cerrahi Bölümü\'nde görev yapmaktadır. Obezite ve reflü cerrahisi alanlarında yoğun deneyime sahiptir. 2013 yılında New York Lenox Hill Hastanesi\'nde dünya eksperi Dr. Mitchell Roslin ile revizyonel bariatrik cerrahi üzerine çalışmış, ABD\'deki bariatrik cerrahi alanındaki yenilikleri yakından takip etmiştir. 2015\'te doçent, 2020\'de Genel Cerrahi Profesörü unvanını almıştır.',
@@ -41,7 +41,7 @@ const doctors = {
   elif: {
     name: 'Uzm. Dr. Elif Gökçen VATANOĞLU',
     branch: 'Kardiyoloji',
-    photo: assetPath('assets/img/doctors/dr-elif-gokcen-vatanoglu.webp'),
+    photo: assetPath('/istanbul-cerrahi-site/assets/img/doctors/dr-elif-gokcen-vatanoglu.webp'),
     videoTr: null,
     videoEn: null,
     introTr: 'Uzm. Dr. Elif Gökçen VATANOĞLU, Özel İstanbul Cerrahi Hastanesi Kardiyoloji Bölümü\'nde görev yapmaktadır. İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi mezunu olan Dr. VATANOĞLU, Siyami Ersek Göğüs Kalp ve Damar Cerrahisi Eğitim ve Araştırma Hastanesi\'nde ihtisasını tamamlamıştır.',
@@ -60,7 +60,7 @@ const doctors = {
   suheda: {
     name: 'Op. Dr. Şuheda ÇILDIR',
     branch: 'Estetik ve Plastik Cerrahi',
-    photo: assetPath('assets/img/doctors/dr-suheda-cildir.webp'),
+    photo: assetPath('/istanbul-cerrahi-site/assets/img/doctors/dr-suheda-cildir.webp'),
     videoTr: null,
     videoEn: null,
     introTr: 'Op. Dr. Şuheda ÇILDIR, Özel İstanbul Cerrahi Hastanesi Plastik, Rekonstrüktif ve Estetik Cerrahi Bölümü\'nde görev yapmaktadır. Sağlık Bilimleri Üniversitesi Kartal Dr. Lütfi Kırdar Şehir Hastanesi\'nde uzmanlık eğitimini tamamlamıştır.',
@@ -78,7 +78,7 @@ const doctors = {
   ibrahim: {
     name: 'Uzm. Dr. İbrahim Cem HEKİMOĞLU',
     branch: 'Dermatoloji',
-    photo: assetPath('assets/img/doctors/uzm-dr-ibrahim-cem.webp'),
+    photo: assetPath('/istanbul-cerrahi-site/assets/img/doctors/uzm-dr-ibrahim-cem.webp'),
     videoTr: null,
     videoEn: null,
     introTr: 'Uzm. Dr. İbrahim Cem HEKİMOĞLU, Özel İstanbul Cerrahi Hastanesi Dermatoloji Bölümü\'nde görev yapmaktadır. Cilt hastalıklarının tanı ve tedavisinde geniş deneyime sahip olan Dr. HEKİMOĞLU, medikal ve estetik dermatoloji alanlarında hizmet vermektedir.',
@@ -96,7 +96,7 @@ const doctors = {
   okkes: {
     name: 'Op. Dr. Ökkeş Celil GÖKÇEK',
     branch: 'Beyin ve Sinir Cerrahisi',
-    photo: assetPath('assets/img/doctors/op-dr-okkes-celil-gokcek.webp'),
+    photo: assetPath('/istanbul-cerrahi-site/assets/img/doctors/op-dr-okkes-celil-gokcek.webp'),
     videoTr: null,
     videoEn: null,
     introTr: 'Op. Dr. Ökkeş Celil GÖKÇEK, Özel İstanbul Cerrahi Hastanesi Beyin ve Sinir Cerrahisi bölümünde görev yapmaktadır. Beyin, omurga ve sinir sistemi hastalıklarının tanı, tedavi ve cerrahi planlama süreçlerinde hasta odaklı yaklaşım sunar.',
@@ -109,7 +109,7 @@ const doctors = {
   leyla: {
     name: 'Uzm. Dr. Leyla GULİYEVA',
     branch: 'İç Hastalıkları',
-    photo: assetPath('assets/img/doctors/dr-leyla-guliyeva-dahiliye.webp'),
+    photo: assetPath('/istanbul-cerrahi-site/assets/img/doctors/dr-leyla-guliyeva-dahiliye.webp'),
     videoTr: null,
     videoEn: null,
     introTr: 'Uzm. Dr. Leyla GULİYEVA, Özel İstanbul Cerrahi Hastanesi İç Hastalıkları bölümünde görev yapmaktadır. Dahili hastalıkların tanı, takip ve yönlendirme süreçlerinde bütüncül değerlendirme yaklaşımıyla hizmet sunar.',
@@ -122,7 +122,7 @@ const doctors = {
   ferhat: {
     name: 'Dr. Ferhat ASLAN',
     branch: 'Acil Servis',
-    photo: assetPath('assets/img/doctors/dr-ferhat-aslan-1.webp'),
+    photo: assetPath('/istanbul-cerrahi-site/assets/img/doctors/dr-ferhat-aslan-1.webp'),
     videoTr: null,
     videoEn: null,
     introTr: 'Dr. Ferhat ASLAN, Özel İstanbul Cerrahi Hastanesi Acil Servis bölümünde görev yapmaktadır. Acil başvuruların ilk değerlendirme, stabilizasyon ve ilgili branşa yönlendirme süreçlerinde görev alır.',
