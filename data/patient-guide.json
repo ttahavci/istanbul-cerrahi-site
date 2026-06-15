@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "index",
+    "title": "İhtiyacınız olan rehber başlığını seçin"
+  },
+  {
+    "slug": "kvkk",
+    "title": "Kişisel verileriniz güvenli süreçlerle korunur."
+  },
+  {
+    "slug": "bildirim",
+    "title": "Görüşlerinizi hastane yönetim süreçlerine dahil edin."
+  },
+  {
+    "slug": "bilgi",
+    "title": "Randevu, bölüm ve işlem süreçleri için destek alın."
+  },
+  {
+    "slug": "memnuniyet",
+    "title": "Hasta deneyimini ölçen geri bildirim alanı."
+  },
+  {
+    "slug": "banka",
+    "title": "Ödeme işlemleri için banka hesap bilgileri."
+  },
+  {
+    "slug": "haklar",
+    "title": "Hasta ve yakınları için güvenli iletişim noktası."
+  },
+  {
+    "slug": "odalar",
+    "title": "Konforlu iyileşme süreci için oda seçenekleri."
+  },
+  {
+    "slug": "ziyaret",
+    "title": "Ziyaret süreçleri hasta güvenliği için planlanır."
+  },
+  {
+    "slug": "guvenlik",
+    "title": "Hasta güvenliği tüm süreçlerin temelidir."
+  },
+  {
+    "slug": "anlasmali",
+    "title": "ÖSS, TSS, banka vakıfları ve kurumsal anlaşmalar."
+  }
+]

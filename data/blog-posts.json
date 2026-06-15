@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "prostat",
+    "title": "Prostat Hastalıkları ve Tedavi Yöntemleri",
+    "category": "Üroloji"
+  },
+  {
+    "slug": "penil-protez",
+    "title": "Penil Protez İmplantasyonu",
+    "category": "Üroloji"
+  },
+  {
+    "slug": "varikosel",
+    "title": "Varikosel: Belirtiler ve Tedavi Yaklaşımı",
+    "category": "Üroloji"
+  },
+  {
+    "slug": "kolesterol",
+    "title": "Kolesterol Dengesi ve Kalp Damar Sağlığı",
+    "category": "İç Hastalıkları"
+  },
+  {
+    "slug": "mesane-kanseri",
+    "title": "Mesane Kanseri Hakkında Bilinmesi Gerekenler",
+    "category": "Üroloji"
+  },
+  {
+    "slug": "insulin-direnci",
+    "title": "İnsülin Direnci ve Metabolik Sağlık",
+    "category": "İç Hastalıkları"
+  },
+  {
+    "slug": "bobrek-tasi-lazer",
+    "title": "Lazerle Böbrek Taşı Ameliyatı",
+    "category": "Üroloji"
+  },
+  {
+    "slug": "hipertansiyon",
+    "title": "Hipertansiyon Takibi ve Tedavi Planı",
+    "category": "İç Hastalıkları"
+  },
+  {
+    "slug": "laparoskopik-bobrek",
+    "title": "Laparoskopik Böbrek Ameliyatı",
+    "category": "Üroloji"
+  },
+  {
+    "slug": "holep",
+    "title": "HoLEP Tedavisi",
+    "category": "Üroloji"
+  },
+  {
+    "slug": "diyabet",
+    "title": "Diyabet Yönetimi",
+    "category": "İç Hastalıkları"
+  },
+  {
+    "slug": "endoskopik-tas",
+    "title": "Endoskopik Taş Ameliyatları",
+    "category": "Üroloji"
+  },
+  {
+    "slug": "el-boyun-genclestirme",
+    "title": "El ve Boyun Gençleştirme Tedavisi",
+    "category": "Dermatoloji"
+  },
+  {
+    "slug": "sirt-emari",
+    "title": "Sırt Emarı",
+    "category": "Radyoloji"
+  },
+  {
+    "slug": "omur-emar",
+    "title": "Omur Emar",
+    "category": "Radyoloji"
+  },
+  {
+    "slug": "colyak",
+    "title": "Çölyak Hastalığı",
+    "category": "İç Hastalıkları"
+  },
+  {
+    "slug": "kalca-emar",
+    "title": "Kalça Emar",
+    "category": "Radyoloji"
+  },
+  {
+    "slug": "diz-emar",
+    "title": "Diz Emar",
+    "category": "Radyoloji"
+  },
+  {
+    "slug": "anemi",
+    "title": "Anemi Belirtileri ve Tedavi Yaklaşımı",
+    "category": "İç Hastalıkları"
+  },
+  {
+    "slug": "boyun-emari",
+    "title": "Boyun Emarı",
+    "category": "Radyoloji"
+  },
+  {
+    "slug": "beyin-emari",
+    "title": "Beyin Emarı",
+    "category": "Radyoloji"
+  },
+  {
+    "slug": "kardiyoloji",
+    "title": "Kardiyoloji Muayenesi",
+    "category": "Kardiyoloji"
+  },
+  {
+    "slug": "enfeksiyon",
+    "title": "Enfeksiyon Hastalıkları",
+    "category": "Enfeksiyon Hastalıkları"
+  },
+  {
+    "slug": "safra-kesesi",
+    "title": "Safra Kesesi Ameliyatı",
+    "category": "Genel Cerrahi"
+  },
+  {
+    "slug": "dis-beyazlatma",
+    "title": "Diş Beyazlatma Nedir?",
+    "category": "Ağız ve Diş Sağlığı"
+  },
+  {
+    "slug": "agiz-kokusu",
+    "title": "Ağız Kokusu Nasıl Geçer?",
+    "category": "Ağız ve Diş Sağlığı"
+  },
+  {
+    "slug": "stres",
+    "title": "Stres Nedir, Neden Olur?",
+    "category": "Psikoloji"
+  },
+  {
+    "slug": "lifli-gidalar",
+    "title": "Yüksek Lifli Gıdalar Nelerdir?",
+    "category": "Beslenme ve Diyet"
+  }
+]

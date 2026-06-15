@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hekimler | Özel İstanbul Cerrahi Hastanesi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+<button aria-label="Tema değiştir" class="theme-toggle" id="themeToggle" type="button"><span class="theme-toggle-icon">🌙</span><span class="theme-toggle-text">Koyu Mod</span></button>
+<nav id="navbar">
+<div class="nav-inner">
+<a class="logo" href="../index.html">
+<img alt="Özel İstanbul Cerrahi Hastanesi" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="../assets/img/logo.png"/>
+<div class="logo-fallback" style="display:none">
+<div class="logo-mark"><svg viewbox="0 0 24 24"><path d="M12 2L3 7v10l9 5 9-5V7L12 2z"></path></svg></div>
+<div class="logo-text-wrap"><strong>İstanbul Cerrahi</strong><span>Hastanesi</span></div>
+</div>
+</a>
+<div class="nav-links">
+<a href="../kurumsal/index.html">Kurumsal</a>
+<a href="../tibbi-birimler/index.html">Tıbbi Birimler</a>
+<a class="active-nav" href="../hekimler/index.html">Hekimler</a>
+<a href="../saglik-rehberi/index.html">Sağlık Rehberi</a>
+<a href="../hasta-rehberi/index.html">Hasta Rehberi</a>
+<a href="../iletisim/index.html">İletişim</a>
+</div>
+<div class="nav-right">
+<a class="nav-phone" href="tel:02122969450">
+<svg viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.63 6.63l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+        0212 296 94 50
+      </a>
+<a class="btn-appt" href="../iletisim/index.html">Online Randevu</a>
+</div>
+</div>
+</nav>
+<div aria-label="Mobil hızlı menü" class="mobile-safe-nav">
+<a href="../kurumsal/index.html">Kurumsal</a>
+<a href="../tibbi-birimler/index.html">Tıbbi Birimler</a>
+<a class="active-nav" href="../hekimler/index.html">Hekimler</a>
+<a href="../saglik-rehberi/index.html">Sağlık Rehberi</a>
+<a href="../hasta-rehberi/index.html">Hasta Rehberi</a>
+<a href="../iletisim/index.html">İletişim</a>
+</div>
+<main aria-hidden="false" class="doctors-directory-page" id="doctorsDetailPage">
+<section class="detail-hero doctors-detail-hero">
+<div class="container detail-hero-inner">
+<a class="page-back active-nav" href="../hekimler/index.html">← Ana sayfaya dön</a>
+<div class="sec-label">Hekimler</div>
+<h1 class="detail-title">Uzman Hekim Kadromuz</h1>
+<p class="detail-lead">Branşa veya doktor adına göre arama yaparak hekimlerimizi inceleyebilir; doktor profilinde tanıtım videosu alanı, özgeçmiş, uzmanlık alanları ve randevu yönlendirmesine ulaşabilirsiniz.</p>
+</div>
+</section>
+<section class="doctors-directory-section">
+<div class="container">
+<div class="doctor-filter-panel">
+<div class="doctor-filter-copy">
+<span>Hekim Arama</span>
+<strong>Doktorunuzu kolayca bulun</strong>
+</div>
+<div class="doctor-filter-controls">
+<input autocomplete="off" id="doctorSearchInput" placeholder="Doktor ismi yazın..." type="search"/>
+<select aria-label="Branş seçiniz" id="doctorBranchSelect">
+<option value="all">Tüm Branşlar</option>
+<option value="Genel Cerrahi">Genel Cerrahi</option>
+<option value="Beyin ve Sinir Cerrahisi">Beyin ve Sinir Cerrahisi</option>
+<option value="Estetik Ve Plastik Cerrahi">Estetik ve Plastik Cerrahi</option>
+<option value="Kardiyoloji">Kardiyoloji</option>
+<option value="Dermatoloji">Dermatoloji</option>
+<option value="İç Hastalıkları">İç Hastalıkları</option>
+<option value="Acil Servis">Acil Servis</option>
+</select>
+</div>
+</div>
+<div class="doctors-directory-grid" id="doctorsDirectoryGrid">
+<article class="doctor-directory-card" data-branch="Genel Cerrahi" data-doctor-key="toygar" data-name="prof dr toygar toydemir">
+<div class="doctor-directory-photo"><img alt="Prof. Dr. Toygar TOYDEMİR" decoding="async" loading="lazy" src="https://istanbulcerrahi.com/wp-content/uploads/2025/12/dr-toygar-toydemir.webp"/><span>Sesli CV / Tanıtım</span></div>
+<div class="doctor-directory-body"><small>Genel Cerrahi</small><h3>Prof. Dr. Toygar TOYDEMİR</h3><p>Obezite, reflü ve ileri laparoskopik cerrahi alanlarında değerlendirme ve tedavi süreçleri.</p><a class="btn-doc-profile" href="toygar.html">Profili İncele</a></div>
+</article>
+<article class="doctor-directory-card" data-branch="Beyin ve Sinir Cerrahisi" data-doctor-key="okkes" data-name="op dr okkes celil gokcek">
+<div class="doctor-directory-photo"><img alt="Op. Dr. Ökkeş Celil GÖKÇEK" decoding="async" loading="lazy" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/op-dr-okkes-celil-gokcek.webp"/><span>Sesli CV / Tanıtım</span></div>
+<div class="doctor-directory-body"><small>Beyin ve Sinir Cerrahisi</small><h3>Op. Dr. Ökkeş Celil GÖKÇEK</h3><p>Beyin, omurga ve sinir sistemi hastalıklarının değerlendirme ve cerrahi planlama süreçleri.</p><a class="btn-doc-profile" href="okkes.html">Profili İncele</a></div>
+</article>
+<article class="doctor-directory-card" data-branch="Estetik Ve Plastik Cerrahi" data-doctor-key="suheda" data-name="op dr suheda çıldır cildir">
+<div class="doctor-directory-photo"><img alt="Op. Dr. Şuheda ÇILDIR" decoding="async" loading="lazy" src="https://istanbulcerrahi.com/wp-content/uploads/2025/12/dr-suheda-cildir.webp"/><span>Sesli CV / Tanıtım</span></div>
+<div class="doctor-directory-body"><small>Estetik ve Plastik Cerrahi</small><h3>Op. Dr. Şuheda ÇILDIR</h3><p>Estetik ve rekonstrüktif cerrahide doğal sonuç, güvenli süreç ve kişiye özel planlama yaklaşımı.</p><a class="btn-doc-profile" href="suheda.html">Profili İncele</a></div>
+</article>
+<article class="doctor-directory-card" data-branch="Kardiyoloji" data-doctor-key="elif" data-name="uzm dr elif gokcen vatanoglu">
+<div class="doctor-directory-photo"><img alt="Uzm. Dr. Elif Gökçen VATANOĞLU" decoding="async" loading="lazy" src="https://istanbulcerrahi.com/wp-content/uploads/2025/11/dr-elif-gokcen-vatanoglu.webp"/><span>Sesli CV / Tanıtım</span></div>
+<div class="doctor-directory-body"><small>Kardiyoloji</small><h3>Uzm. Dr. Elif Gökçen VATANOĞLU</h3><p>Kalp ve dolaşım sistemi hastalıklarının tanı, takip ve tedavi planlama süreçleri.</p><a class="btn-doc-profile" href="elif.html">Profili İncele</a></div>
+</article>
+<article class="doctor-directory-card" data-branch="Dermatoloji" data-doctor-key="ibrahim" data-name="uzm dr ibrahim cem hekimoglu">
+<div class="doctor-directory-photo"><img alt="Uzm. Dr. İbrahim Cem HEKİMOĞLU" decoding="async" loading="lazy" src="https://istanbulcerrahi.com/wp-content/uploads/2025/12/uzm-dr-ibrahim-cem.webp"/><span>Sesli CV / Tanıtım</span></div>
+<div class="doctor-directory-body"><small>Dermatoloji</small><h3>Uzm. Dr. İbrahim Cem HEKİMOĞLU</h3><p>Cilt, saç ve tırnak hastalıklarında medikal ve estetik dermatoloji değerlendirmeleri.</p><a class="btn-doc-profile" href="ibrahim.html">Profili İncele</a></div>
+</article>
+<article class="doctor-directory-card" data-branch="İç Hastalıkları" data-doctor-key="leyla" data-name="uzm dr leyla guliyeva">
+<div class="doctor-directory-photo"><img alt="Uzm. Dr. Leyla GULİYEVA" decoding="async" loading="lazy" src="https://istanbulcerrahi.com/wp-content/uploads/2025/11/dr-leyla-guliyeva-dahiliye.webp"/><span>Sesli CV / Tanıtım</span></div>
+<div class="doctor-directory-body"><small>İç Hastalıkları</small><h3>Uzm. Dr. Leyla GULİYEVA</h3><p>Dahili hastalıklar, check-up, kronik hastalık takibi ve bütüncül hasta değerlendirmesi.</p><a class="btn-doc-profile" href="leyla.html">Profili İncele</a></div>
+</article>
+<article class="doctor-directory-card" data-branch="Acil Servis" data-doctor-key="ferhat" data-name="dr ferhat aslan">
+<div class="doctor-directory-photo"><img alt="Dr. Ferhat ASLAN" decoding="async" loading="lazy" src="https://istanbulcerrahi.com/wp-content/uploads/2023/12/dr-ferhat-aslan-1.webp"/><span>Sesli CV / Tanıtım</span></div>
+<div class="doctor-directory-body"><small>Acil Servis</small><h3>Dr. Ferhat ASLAN</h3><p>Acil başvuruların ilk değerlendirme, stabilizasyon ve ilgili branşa yönlendirme süreçleri.</p><a class="btn-doc-profile" href="ferhat.html">Profili İncele</a></div>
+</article>
+</div>
+<div class="doctor-empty-state" id="doctorEmptyState">Aramanıza uygun hekim bulunamadı. Branş filtresini değiştirerek tekrar deneyebilirsiniz.</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="f-brand">
+<div class="f-logo">
+<img alt="Özel İstanbul Cerrahi Hastanesi" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="../assets/img/logo.png"/>
+<div class="f-logo-fallback" style="display:none"><div class="f-logo-mark"><svg viewbox="0 0 24 24"><path d="M12 2L3 7v10l9 5 9-5V7L12 2z"></path></svg></div><div class="f-logo-name">Özel İstanbul Cerrahi Hastanesi</div></div>
+</div>
+<p class="f-desc">Fulya, Şişli’de konumlanan Özel İstanbul Cerrahi Hastanesi; güven, kalite ve hasta odaklı hizmet anlayışıyla yanınızdadır.</p>
+<div class="f-social">
+<a class="f-soc-btn" href="https://www.facebook.com/istanbulcerrahihastanesi" target="_blank"><svg viewbox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg></a>
+<a class="f-soc-btn" href="https://www.instagram.com/istanbulcerrahihastanesi/" target="_blank"><svg viewbox="0 0 24 24"><rect height="20" rx="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+<a class="f-soc-btn" href="https://www.youtube.com/@istanbulcerrahi" target="_blank"><svg viewbox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"></path><polygon fill="white" points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" stroke="none"></polygon></svg></a>
+<a class="f-soc-btn" href="https://wa.me/905316507657" target="_blank"><svg viewbox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg></a>
+</div>
+</div>
+<div>
+<div class="f-col-title">Kurumsal</div>
+<div class="f-links">
+<a href="../kurumsal/index.html">Hakkımızda</a>
+<a href="../kurumsal/index.html">Vizyon &amp; Misyon</a>
+<a href="#sss">Anlaşmalı Kurumlar</a>
+<a href="../iletisim/index.html">Banka Hesap Numaraları</a>
+<a href="../iletisim/index.html">İletişim</a>
+</div>
+</div>
+<div>
+<div class="f-col-title">Tıbbi Birimler</div>
+<div class="f-links">
+<a href="../tibbi-birimler/index.html">Obezite Cerrahisi</a>
+<a href="../tibbi-birimler/index.html">Estetik Cerrahi</a>
+<a href="../tibbi-birimler/index.html">Kadın Hastalıkları</a>
+<a href="../tibbi-birimler/index.html">Ortopedi</a>
+<a href="../tibbi-birimler/index.html">Tüm Birimler →</a>
+</div>
+</div>
+<div>
+<div class="f-col-title">Hasta Hizmetleri</div>
+<div class="f-links">
+<a href="../iletisim/index.html">Online Randevu</a>
+<a href="../hasta-rehberi/index.html">Hasta Rehberi</a>
+<a href="../saglik-rehberi/index.html">Sağlık Rehberi</a>
+<a data-patient-open="anlasmali" href="../hasta-rehberi/index.html">Sigorta &amp; Anlaşmalar</a>
+<a href="tel:02122969450">0212 296 94 50</a>
+</div>
+</div>
+</div>
+<div class="f-bottom">
+<div class="f-copy">© 2026 Özel İstanbul Cerrahi Hastanesi. Tüm hakları saklıdır. | Sayfa içeriği sadece bilgilendirme amaçlıdır.</div>
+<div class="f-badges"><span class="f-badge">SGK Anlaşmalı</span><span class="f-badge">ÖSS Anlaşmalı</span><span class="f-badge">TSS Anlaşmalı</span></div>
+</div>
+</div>
+</footer>
+<div class="float-wa">
+<a class="float-btn float-btn-wa" href="https://wa.me/905316507657?text=Merhaba%20bilgi%20almak%20istiyorum" target="_blank" title="WhatsApp">
+<svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+<a class="float-btn float-btn-phone" href="tel:02122969450" title="Hemen Ara">
+<svg viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.63 6.63l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+</a>
+</div>
+<div class="modal-overlay" id="docModal" onclick="closeModal(event)">
+<div class="modal-box" id="modalBox">
+<div class="modal-close"><button onclick="closeDocModal()"><svg viewbox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"></path></svg></button></div>
+<div class="modal-inner">
+<!-- VIDEO SIDE -->
+<div class="modal-video-side">
+<div class="mv-label">Doktorunuzu Yakından Tanıyın</div>
+<div class="video-wrap" id="videoWrap" onclick="playVideo()">
+<img alt="video thumbnail" class="vid-thumb" id="vidThumb" src=""/>
+<div class="play-btn" id="playBtn"><svg viewbox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div>
+<div class="vid-caption">
+<strong id="vidCaptionName"></strong>
+<span id="vidCaptionBranch"></span>
+</div>
+<iframe allow="autoplay" allowfullscreen="" id="videoFrame" style="display:none;position:absolute;inset:0;width:100%;height:100%;border:none;border-radius:18px"></iframe>
+</div>
+<div class="lang-switch">
+<button class="lang-btn active" onclick="switchLang('tr',this)">🇹🇷 Türkçe</button>
+<button class="lang-btn" onclick="switchLang('en',this)">🇬🇧 English</button>
+</div>
+<div class="doc-intro-box"><p id="introText"></p></div>
+</div>
+<!-- INFO SIDE -->
+<div class="modal-info-side">
+<div class="modal-doc-header">
+<img alt="" class="modal-doc-photo" id="modalDocPhoto" src=""/>
+<div>
+<div class="modal-doc-name" id="modalDocName"></div>
+<div class="modal-doc-tag" id="modalDocBranch"></div>
+</div>
+</div>
+<div class="tabs-row">
+<button class="tab-btn on" onclick="switchTab('cv',this)">Özgeçmiş</button>
+<button class="tab-btn" onclick="switchTab('egitim',this)">Eğitim</button>
+<button class="tab-btn" onclick="switchTab('uzmanlik',this)">Uzmanlık</button>
+<button class="tab-btn" onclick="switchTab('yayinlar',this)">Yayınlar &amp; Sertifikalar</button>
+</div>
+<div class="tab-pane on" id="tp-cv"></div>
+<div class="tab-pane" id="tp-egitim"></div>
+<div class="tab-pane" id="tp-uzmanlik"></div>
+<div class="tab-pane" id="tp-yayinlar"></div>
+<div class="appt-cta-bar">
+<div class="appt-cta-bar-text">
+<strong id="apptCtaName"></strong>
+<span>Uygun tarih ve saati seçerek hemen başvurun</span>
+</div>
+<a href="../iletisim/index.html" onclick="closeDocModal()">Randevu Al</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

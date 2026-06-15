@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enfeksiyon Hastalıkları | Özel İstanbul Cerrahi Hastanesi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/main.js" defer></script>
+</head>
+<body data-active-article="enfeksiyon">
+<button aria-label="Tema değiştir" class="theme-toggle" id="themeToggle" type="button"><span class="theme-toggle-icon">🌙</span><span class="theme-toggle-text">Koyu Mod</span></button>
+<nav id="navbar">
+<div class="nav-inner">
+<a class="logo" href="../index.html">
+<img alt="Özel İstanbul Cerrahi Hastanesi" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="../assets/img/logo.png"/>
+<div class="logo-fallback" style="display:none">
+<div class="logo-mark"><svg viewbox="0 0 24 24"><path d="M12 2L3 7v10l9 5 9-5V7L12 2z"></path></svg></div>
+<div class="logo-text-wrap"><strong>İstanbul Cerrahi</strong><span>Hastanesi</span></div>
+</div>
+</a>
+<div class="nav-links">
+<a href="../kurumsal/index.html">Kurumsal</a>
+<a href="../tibbi-birimler/index.html">Tıbbi Birimler</a>
+<a href="../hekimler/index.html">Hekimler</a>
+<a class="active-nav" href="../saglik-rehberi/index.html">Sağlık Rehberi</a>
+<a href="../hasta-rehberi/index.html">Hasta Rehberi</a>
+<a href="../iletisim/index.html">İletişim</a>
+</div>
+<div class="nav-right">
+<a class="nav-phone" href="tel:02122969450">
+<svg viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.63 6.63l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+        0212 296 94 50
+      </a>
+<a class="btn-appt" href="../iletisim/index.html">Online Randevu</a>
+</div>
+</div>
+</nav>
+<div aria-label="Mobil hızlı menü" class="mobile-safe-nav">
+<a href="../kurumsal/index.html">Kurumsal</a>
+<a href="../tibbi-birimler/index.html">Tıbbi Birimler</a>
+<a href="../hekimler/index.html">Hekimler</a>
+<a class="active-nav" href="../saglik-rehberi/index.html">Sağlık Rehberi</a>
+<a href="../hasta-rehberi/index.html">Hasta Rehberi</a>
+<a href="../iletisim/index.html">İletişim</a>
+</div>
+<main aria-hidden="false" class="page-main" id="blogDetailPage">
+<section class="detail-hero health-guide-hero">
+<div class="container detail-hero-inner">
+<a class="page-back active-nav" href="../saglik-rehberi/index.html">← Ana sayfaya dön</a>
+<div class="sec-label">Sağlık Rehberi</div>
+<h1 class="detail-title">Bilgilendirici Sağlık İçerikleri</h1>
+<p class="detail-lead">Branşlara göre hazırlanmış yazıları seçerek detaylı bilgilendirme sayfalarını inceleyebilirsiniz.</p>
+</div>
+</section>
+<section class="health-guide-section">
+<div class="container">
+<div class="health-category-strip"><button class="health-category-filter active" data-health-category="all" type="button">Tümü <b>28</b></button>
+<button class="health-category-filter" data-health-category="Üroloji" type="button">Üroloji <b>8</b></button>
+<button class="health-category-filter" data-health-category="İç Hastalıkları" type="button">İç Hastalıkları <b>6</b></button>
+<button class="health-category-filter" data-health-category="Radyoloji" type="button">Radyoloji <b>6</b></button>
+<button class="health-category-filter" data-health-category="Ağız ve Diş Sağlığı" type="button">Ağız ve Diş Sağlığı <b>2</b></button>
+<button class="health-category-filter" data-health-category="Dermatoloji" type="button">Dermatoloji <b>1</b></button>
+<button class="health-category-filter" data-health-category="Kardiyoloji" type="button">Kardiyoloji <b>1</b></button>
+<button class="health-category-filter" data-health-category="Genel Cerrahi" type="button">Genel Cerrahi <b>1</b></button>
+<button class="health-category-filter" data-health-category="Beslenme ve Diyet" type="button">Beslenme ve Diyet <b>1</b></button>
+<button class="health-category-filter" data-health-category="Enfeksiyon Hastalıkları" type="button">Enfeksiyon Hastalıkları <b>1</b></button>
+<button class="health-category-filter" data-health-category="Psikoloji" type="button">Psikoloji <b>1</b></button></div>
+<div class="health-guide-layout">
+<aside class="health-guide-sidebar"><div class="health-side-title">Yazılar</div><div class="health-side-note">Başlık seçerek içeriği görüntüleyin.</div><div class="health-guide-nav"><a class="health-nav-btn" data-blog-select="prostat" data-category="Üroloji" href="prostat.html">01 Prostat Hastalıkları ve Tedavi Yöntemleri</a>
+<a class="health-nav-btn" data-blog-select="penil-protez" data-category="Üroloji" href="penil-protez.html">02 Penil Protez İmplantasyonu</a>
+<a class="health-nav-btn" data-blog-select="varikosel" data-category="Üroloji" href="varikosel.html">03 Varikosel: Belirtiler ve Tedavi Yaklaşımı</a>
+<a class="health-nav-btn" data-blog-select="kolesterol" data-category="İç Hastalıkları" href="kolesterol.html">04 Kolesterol Dengesi ve Kalp Damar Sağlığı</a>
+<a class="health-nav-btn" data-blog-select="mesane-kanseri" data-category="Üroloji" href="mesane-kanseri.html">05 Mesane Kanseri Hakkında Bilinmesi Gerekenler</a>
+<a class="health-nav-btn" data-blog-select="insulin-direnci" data-category="İç Hastalıkları" href="insulin-direnci.html">06 İnsülin Direnci ve Metabolik Sağlık</a>
+<a class="health-nav-btn" data-blog-select="bobrek-tasi-lazer" data-category="Üroloji" href="bobrek-tasi-lazer.html">07 Lazerle Böbrek Taşı Ameliyatı</a>
+<a class="health-nav-btn" data-blog-select="hipertansiyon" data-category="İç Hastalıkları" href="hipertansiyon.html">08 Hipertansiyon Takibi ve Tedavi Planı</a>
+<a class="health-nav-btn" data-blog-select="laparoskopik-bobrek" data-category="Üroloji" href="laparoskopik-bobrek.html">09 Laparoskopik Böbrek Ameliyatı</a>
+<a class="health-nav-btn" data-blog-select="holep" data-category="Üroloji" href="holep.html">10 HoLEP Tedavisi</a>
+<a class="health-nav-btn" data-blog-select="diyabet" data-category="İç Hastalıkları" href="diyabet.html">11 Diyabet Yönetimi</a>
+<a class="health-nav-btn" data-blog-select="endoskopik-tas" data-category="Üroloji" href="endoskopik-tas.html">12 Endoskopik Taş Ameliyatları</a>
+<a class="health-nav-btn" data-blog-select="el-boyun-genclestirme" data-category="Dermatoloji" href="el-boyun-genclestirme.html">13 El ve Boyun Gençleştirme Tedavisi</a>
+<a class="health-nav-btn" data-blog-select="sirt-emari" data-category="Radyoloji" href="sirt-emari.html">14 Sırt Emarı</a>
+<a class="health-nav-btn" data-blog-select="omur-emar" data-category="Radyoloji" href="omur-emar.html">15 Omur Emar</a>
+<a class="health-nav-btn" data-blog-select="colyak" data-category="İç Hastalıkları" href="colyak.html">16 Çölyak Hastalığı</a>
+<a class="health-nav-btn" data-blog-select="kalca-emar" data-category="Radyoloji" href="kalca-emar.html">17 Kalça Emar</a>
+<a class="health-nav-btn" data-blog-select="diz-emar" data-category="Radyoloji" href="diz-emar.html">18 Diz Emar</a>
+<a class="health-nav-btn" data-blog-select="anemi" data-category="İç Hastalıkları" href="anemi.html">19 Anemi Belirtileri ve Tedavi Yaklaşımı</a>
+<a class="health-nav-btn" data-blog-select="boyun-emari" data-category="Radyoloji" href="boyun-emari.html">20 Boyun Emarı</a>
+<a class="health-nav-btn" data-blog-select="beyin-emari" data-category="Radyoloji" href="beyin-emari.html">21 Beyin Emarı</a>
+<a class="health-nav-btn" data-blog-select="kardiyoloji" data-category="Kardiyoloji" href="kardiyoloji.html">22 Kardiyoloji Muayenesi</a>
+<a class="health-nav-btn active" data-blog-select="enfeksiyon" data-category="Enfeksiyon Hastalıkları" href="enfeksiyon.html">23 Enfeksiyon Hastalıkları</a>
+<a class="health-nav-btn" data-blog-select="safra-kesesi" data-category="Genel Cerrahi" href="safra-kesesi.html">24 Safra Kesesi Ameliyatı</a>
+<a class="health-nav-btn" data-blog-select="dis-beyazlatma" data-category="Ağız ve Diş Sağlığı" href="dis-beyazlatma.html">25 Diş Beyazlatma Nedir?</a>
+<a class="health-nav-btn" data-blog-select="agiz-kokusu" data-category="Ağız ve Diş Sağlığı" href="agiz-kokusu.html">26 Ağız Kokusu Nasıl Geçer?</a>
+<a class="health-nav-btn" data-blog-select="stres" data-category="Psikoloji" href="stres.html">27 Stres Nedir, Neden Olur?</a>
+<a class="health-nav-btn" data-blog-select="lifli-gidalar" data-category="Beslenme ve Diyet" href="lifli-gidalar.html">28 Yüksek Lifli Gıdalar Nelerdir?</a></div><div class="health-category-empty" id="healthCategoryEmpty">Bu kategori için henüz içerik eklenmedi.</div></aside>
+<div class="health-guide-content"><article class="health-article-panel" data-article-panel="prostat" data-category="Üroloji" id="article-prostat">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Üroloji</div>
+<h2>Prostat Hastalıkları ve Tedavi Yöntemleri</h2>
+<p>Prostat, erkek üreme sisteminde mesanenin altında yer alan ve idrar kanalıyla ilişkili bir bezdir. Yaşla birlikte büyüme, idrar yakınmaları ve farklı prostat hastalıkları gündeme gelebilir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Prostat Hastalıkları ve Tedavi Yöntemleri" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/prostat-2.jpg.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Prostat, erkek üreme sisteminde mesanenin altında yer alan ve idrar kanalıyla ilişkili bir bezdir. Yaşla birlikte büyüme, idrar yakınmaları ve farklı prostat hastalıkları gündeme gelebilir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="penil-protez" data-category="Üroloji" id="article-penil-protez">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Üroloji</div>
+<h2>Penil Protez İmplantasyonu</h2>
+<p>Penil protez implantasyonu, ereksiyon fonksiyonunun ileri düzeyde etkilendiği hastalarda uzman hekim değerlendirmesiyle planlanan cerrahi bir tedavi seçeneğidir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Penil Protez İmplantasyonu" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/penil-protez.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Penil protez implantasyonu, ereksiyon fonksiyonunun ileri düzeyde etkilendiği hastalarda uzman hekim değerlendirmesiyle planlanan cerrahi bir tedavi seçeneğidir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="varikosel" data-category="Üroloji" id="article-varikosel">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Üroloji</div>
+<h2>Varikosel: Belirtiler ve Tedavi Yaklaşımı</h2>
+<p>Varikosel, testis çevresindeki toplardamarların genişlemesiyle ortaya çıkan ve bazı hastalarda ağrı, ağırlık hissi veya üreme sağlığıyla ilgili sorunlara neden olabilen bir durumdur.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Varikosel: Belirtiler ve Tedavi Yaklaşımı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/varikosel-2.jpg.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Varikosel, testis çevresindeki toplardamarların genişlemesiyle ortaya çıkan ve bazı hastalarda ağrı, ağırlık hissi veya üreme sağlığıyla ilgili sorunlara neden olabilen bir durumdur. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="kolesterol" data-category="İç Hastalıkları" id="article-kolesterol">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">İç Hastalıkları</div>
+<h2>Kolesterol Dengesi ve Kalp Damar Sağlığı</h2>
+<p>Kolesterol düzeylerinin dengede tutulması, kalp ve damar sağlığının korunmasında önemli rol oynar. LDL, HDL ve trigliserid değerleri kişinin risk profiliyle birlikte değerlendirilmelidir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Kolesterol Dengesi ve Kalp Damar Sağlığı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/kolesterol-2.jpg.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Kolesterol düzeylerinin dengede tutulması, kalp ve damar sağlığının korunmasında önemli rol oynar. LDL, HDL ve trigliserid değerleri kişinin risk profiliyle birlikte değerlendirilmelidir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="mesane-kanseri" data-category="Üroloji" id="article-mesane-kanseri">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Üroloji</div>
+<h2>Mesane Kanseri Hakkında Bilinmesi Gerekenler</h2>
+<p>Mesane kanseri, mesane dokusundaki hücrelerin kontrolsüz çoğalmasıyla gelişebilir. Erken değerlendirme, özellikle idrarda kan görülmesi gibi bulgularda önemlidir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Mesane Kanseri Hakkında Bilinmesi Gerekenler" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/mesane-kanseri.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Mesane kanseri, mesane dokusundaki hücrelerin kontrolsüz çoğalmasıyla gelişebilir. Erken değerlendirme, özellikle idrarda kan görülmesi gibi bulgularda önemlidir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="insulin-direnci" data-category="İç Hastalıkları" id="article-insulin-direnci">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">İç Hastalıkları</div>
+<h2>İnsülin Direnci ve Metabolik Sağlık</h2>
+<p>İnsülin direnci, vücudun insüline verdiği yanıtın azalmasıyla kan şekeri kontrolünün zorlaşmasına neden olabilir. Beslenme, hareket ve medikal takip birlikte değerlendirilir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="İnsülin Direnci ve Metabolik Sağlık" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/insulin-2.jpg.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>İnsülin direnci, vücudun insüline verdiği yanıtın azalmasıyla kan şekeri kontrolünün zorlaşmasına neden olabilir. Beslenme, hareket ve medikal takip birlikte değerlendirilir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="bobrek-tasi-lazer" data-category="Üroloji" id="article-bobrek-tasi-lazer">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Üroloji</div>
+<h2>Lazerle Böbrek Taşı Ameliyatı</h2>
+<p>Lazerle böbrek taşı tedavisi, böbrek veya idrar yollarındaki taşların endoskopik yöntemlerle parçalanmasını hedefleyen modern bir yaklaşımdır.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Lazerle Böbrek Taşı Ameliyatı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/lazer-bobrek.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Lazerle böbrek taşı tedavisi, böbrek veya idrar yollarındaki taşların endoskopik yöntemlerle parçalanmasını hedefleyen modern bir yaklaşımdır. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="hipertansiyon" data-category="İç Hastalıkları" id="article-hipertansiyon">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">İç Hastalıkları</div>
+<h2>Hipertansiyon Takibi ve Tedavi Planı</h2>
+<p>Hipertansiyon, kan basıncının uzun süre normalin üzerinde seyretmesi durumudur. Düzenli ölçüm, yaşam tarzı düzenlemeleri ve hekim kontrolü önemlidir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Hipertansiyon Takibi ve Tedavi Planı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/hipertansiyon.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Hipertansiyon, kan basıncının uzun süre normalin üzerinde seyretmesi durumudur. Düzenli ölçüm, yaşam tarzı düzenlemeleri ve hekim kontrolü önemlidir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="laparoskopik-bobrek" data-category="Üroloji" id="article-laparoskopik-bobrek">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Üroloji</div>
+<h2>Laparoskopik Böbrek Ameliyatı</h2>
+<p>Laparoskopik böbrek ameliyatları, uygun hastalarda küçük kesilerle yapılan ve iyileşme konforunu destekleyebilen cerrahi yöntemler arasında yer alır.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Laparoskopik Böbrek Ameliyatı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/laporoskopik-bobrek-kanseri-ameliyatlari.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Laparoskopik böbrek ameliyatları, uygun hastalarda küçük kesilerle yapılan ve iyileşme konforunu destekleyebilen cerrahi yöntemler arasında yer alır. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="holep" data-category="Üroloji" id="article-holep">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Üroloji</div>
+<h2>HoLEP Tedavisi</h2>
+<p>HoLEP, iyi huylu prostat büyümesinde kullanılan lazer teknolojili cerrahi yöntemlerden biridir. Tedavi planı prostat boyutu ve hastanın bulgularına göre yapılır.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="HoLEP Tedavisi" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/holep.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>HoLEP, iyi huylu prostat büyümesinde kullanılan lazer teknolojili cerrahi yöntemlerden biridir. Tedavi planı prostat boyutu ve hastanın bulgularına göre yapılır. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="diyabet" data-category="İç Hastalıkları" id="article-diyabet">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">İç Hastalıkları</div>
+<h2>Diyabet Yönetimi</h2>
+<p>Diyabet, kan şekeri dengesinin bozulmasıyla ilerleyen kronik bir sağlık durumudur. Düzenli takip, beslenme planı ve medikal tedavi kişiye göre düzenlenir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Diyabet Yönetimi" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/diyabet-cerrahisi.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Diyabet, kan şekeri dengesinin bozulmasıyla ilerleyen kronik bir sağlık durumudur. Düzenli takip, beslenme planı ve medikal tedavi kişiye göre düzenlenir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="endoskopik-tas" data-category="Üroloji" id="article-endoskopik-tas">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Üroloji</div>
+<h2>Endoskopik Taş Ameliyatları</h2>
+<p>Endoskopik taş ameliyatları, idrar yollarındaki taşların kamera destekli kapalı yöntemlerle tedavi edilmesini sağlayan girişimlerdir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Endoskopik Taş Ameliyatları" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/endoskopik-tas-ameliyatlari.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Endoskopik taş ameliyatları, idrar yollarındaki taşların kamera destekli kapalı yöntemlerle tedavi edilmesini sağlayan girişimlerdir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="el-boyun-genclestirme" data-category="Dermatoloji" id="article-el-boyun-genclestirme">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Dermatoloji</div>
+<h2>El ve Boyun Gençleştirme Tedavisi</h2>
+<p>El ve boyun bölgesi, yaşlanma belirtilerinin sık görüldüğü alanlardır. Uygulama planı cilt kalitesi, elastikiyet ve kişinin beklentilerine göre şekillenir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="El ve Boyun Gençleştirme Tedavisi" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/el-ve-boyun-genclestirme.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>El ve boyun bölgesi, yaşlanma belirtilerinin sık görüldüğü alanlardır. Uygulama planı cilt kalitesi, elastikiyet ve kişinin beklentilerine göre şekillenir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="sirt-emari" data-category="Radyoloji" id="article-sirt-emari">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Radyoloji</div>
+<h2>Sırt Emarı</h2>
+<p>Sırt emarı, omurga ve çevre dokuların ayrıntılı görüntülenmesine yardımcı olan manyetik rezonans yöntemlerinden biridir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Sırt Emarı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/sirt-emari.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Sırt emarı, omurga ve çevre dokuların ayrıntılı görüntülenmesine yardımcı olan manyetik rezonans yöntemlerinden biridir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="omur-emar" data-category="Radyoloji" id="article-omur-emar">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Radyoloji</div>
+<h2>Omur Emar</h2>
+<p>Omur emar, omurga yapısı, diskler, sinir kanalları ve çevre yumuşak dokuların değerlendirilmesinde kullanılan görüntüleme yöntemidir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Omur Emar" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/omur-emar.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Omur emar, omurga yapısı, diskler, sinir kanalları ve çevre yumuşak dokuların değerlendirilmesinde kullanılan görüntüleme yöntemidir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="colyak" data-category="İç Hastalıkları" id="article-colyak">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">İç Hastalıkları</div>
+<h2>Çölyak Hastalığı</h2>
+<p>Çölyak hastalığı, gluten içeren gıdalara karşı bağışıklık temelli yanıtla ortaya çıkan ve bağırsak sağlığını etkileyebilen bir durumdur.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Çölyak Hastalığı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/colyak-hastaligi-2.jpg.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Çölyak hastalığı, gluten içeren gıdalara karşı bağışıklık temelli yanıtla ortaya çıkan ve bağırsak sağlığını etkileyebilen bir durumdur. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="kalca-emar" data-category="Radyoloji" id="article-kalca-emar">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Radyoloji</div>
+<h2>Kalça Emar</h2>
+<p>Kalça emarı, kalça eklemi ve çevresindeki yumuşak dokuların detaylı incelenmesine olanak sağlayan görüntüleme yöntemidir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Kalça Emar" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/kalca-emar.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Kalça emarı, kalça eklemi ve çevresindeki yumuşak dokuların detaylı incelenmesine olanak sağlayan görüntüleme yöntemidir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="diz-emar" data-category="Radyoloji" id="article-diz-emar">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Radyoloji</div>
+<h2>Diz Emar</h2>
+<p>Diz emarı, menisküs, bağlar, kıkırdak yapılar ve eklem çevresindeki dokuların değerlendirilmesinde kullanılır.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Diz Emar" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/diz-emari.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Diz emarı, menisküs, bağlar, kıkırdak yapılar ve eklem çevresindeki dokuların değerlendirilmesinde kullanılır. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="anemi" data-category="İç Hastalıkları" id="article-anemi">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">İç Hastalıkları</div>
+<h2>Anemi Belirtileri ve Tedavi Yaklaşımı</h2>
+<p>Anemi; halsizlik, yorgunluk, baş dönmesi, nefes darlığı ve solukluk gibi belirtilerle kendini gösterebilir. Nedenin belirlenmesi tedavi planı için önemlidir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Anemi Belirtileri ve Tedavi Yaklaşımı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/anemi-2.jpg.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Anemi; halsizlik, yorgunluk, baş dönmesi, nefes darlığı ve solukluk gibi belirtilerle kendini gösterebilir. Nedenin belirlenmesi tedavi planı için önemlidir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="boyun-emari" data-category="Radyoloji" id="article-boyun-emari">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Radyoloji</div>
+<h2>Boyun Emarı</h2>
+<p>Boyun emarı, boyun omurları, diskler, sinir kökleri ve çevre yumuşak dokuların detaylı görüntülenmesini sağlar.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Boyun Emarı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/boyun-emari.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Boyun emarı, boyun omurları, diskler, sinir kökleri ve çevre yumuşak dokuların detaylı görüntülenmesini sağlar. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="beyin-emari" data-category="Radyoloji" id="article-beyin-emari">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Radyoloji</div>
+<h2>Beyin Emarı</h2>
+<p>Beyin emarı, beyin dokusunun ayrıntılı incelenmesine yardımcı olan ve birçok nörolojik durumun değerlendirilmesinde kullanılan görüntüleme yöntemidir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Beyin Emarı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/beyin-emari.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Beyin emarı, beyin dokusunun ayrıntılı incelenmesine yardımcı olan ve birçok nörolojik durumun değerlendirilmesinde kullanılan görüntüleme yöntemidir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="kardiyoloji" data-category="Kardiyoloji" id="article-kardiyoloji">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Kardiyoloji</div>
+<h2>Kardiyoloji Muayenesi</h2>
+<p>Kardiyoloji, kalp ve damar sisteminin sağlığını inceleyen; ritim bozukluğu, hipertansiyon, göğüs ağrısı ve kalp damar risklerini değerlendiren uzmanlık alanıdır.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Kardiyoloji Muayenesi" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/kardiyoloji.png.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Kardiyoloji, kalp ve damar sisteminin sağlığını inceleyen; ritim bozukluğu, hipertansiyon, göğüs ağrısı ve kalp damar risklerini değerlendiren uzmanlık alanıdır. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel active" data-article-panel="enfeksiyon" data-category="Enfeksiyon Hastalıkları" id="article-enfeksiyon">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Enfeksiyon Hastalıkları</div>
+<h2>Enfeksiyon Hastalıkları</h2>
+<p>Enfeksiyon hastalıkları, mikroorganizmaların neden olduğu sağlık sorunlarının tanı, tedavi ve korunma süreçlerini kapsar.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Enfeksiyon Hastalıkları" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/enfeksiyon-2.png.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Enfeksiyon hastalıkları, mikroorganizmaların neden olduğu sağlık sorunlarının tanı, tedavi ve korunma süreçlerini kapsar. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="safra-kesesi" data-category="Genel Cerrahi" id="article-safra-kesesi">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Genel Cerrahi</div>
+<h2>Safra Kesesi Ameliyatı</h2>
+<p>Safra kesesi taşları ve safra kesesiyle ilişkili şikâyetler uygun hastalarda cerrahi değerlendirme gerektirebilir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Safra Kesesi Ameliyatı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/safra-kesesi-2-na.jpg.webp"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Safra kesesi taşları ve safra kesesiyle ilişkili şikâyetler uygun hastalarda cerrahi değerlendirme gerektirebilir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="dis-beyazlatma" data-category="Ağız ve Diş Sağlığı" id="article-dis-beyazlatma">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Ağız ve Diş Sağlığı</div>
+<h2>Diş Beyazlatma Nedir?</h2>
+<p>Diş beyazlatma, diş renginin daha açık ve estetik görünmesine yardımcı olan uygulamalardan biridir. İşlem öncesi ağız ve diş sağlığı değerlendirilmelidir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Diş Beyazlatma Nedir?" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2023/11/woman-whitening-treatment-scaled.jpg"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Diş beyazlatma, diş renginin daha açık ve estetik görünmesine yardımcı olan uygulamalardan biridir. İşlem öncesi ağız ve diş sağlığı değerlendirilmelidir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="agiz-kokusu" data-category="Ağız ve Diş Sağlığı" id="article-agiz-kokusu">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Ağız ve Diş Sağlığı</div>
+<h2>Ağız Kokusu Nasıl Geçer?</h2>
+<p>Ağız kokusu; ağız hijyeni, diş eti hastalıkları, beslenme, mide-bağırsak sistemi ve sistemik durumlarla ilişkili olabilir. Nedenin belirlenmesi önemlidir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Ağız Kokusu Nasıl Geçer?" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2023/11/brunette-female-30s-covering-mouth-with-both-hands-keeping-silence-faithful-lady-friend-promising-tell-secrets-being-trustworthy-people-attitude-concept-scaled.jpg"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Ağız kokusu; ağız hijyeni, diş eti hastalıkları, beslenme, mide-bağırsak sistemi ve sistemik durumlarla ilişkili olabilir. Nedenin belirlenmesi önemlidir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="stres" data-category="Psikoloji" id="article-stres">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Psikoloji</div>
+<h2>Stres Nedir, Neden Olur?</h2>
+<p>Stres, kişinin bedensel ve zihinsel yüklenmelere verdiği doğal yanıttır. Uzun sürdüğünde uyku, iştah, duygu durumu ve yaşam kalitesi üzerinde etkili olabilir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Stres Nedir, Neden Olur?" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2023/11/stress-topic-landing-page-tile_tcm7-278182_w1024_n.jpg"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Stres, kişinin bedensel ve zihinsel yüklenmelere verdiği doğal yanıttır. Uzun sürdüğünde uyku, iştah, duygu durumu ve yaşam kalitesi üzerinde etkili olabilir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article>
+<article class="health-article-panel" data-article-panel="lifli-gidalar" data-category="Beslenme ve Diyet" id="article-lifli-gidalar">
+<div class="health-article-hero">
+<div class="health-article-copy">
+<div class="health-eyebrow">Beslenme ve Diyet</div>
+<h2>Yüksek Lifli Gıdalar Nelerdir?</h2>
+<p>Lifli gıdalar sindirim sağlığını destekleyen, tokluk hissine katkı sağlayan ve dengeli beslenmede önemli yer tutan besinlerdir.</p>
+<div class="health-note">Bu içerik bilgilendirme amaçlıdır. Tanı ve tedavi için mutlaka hekiminize başvurunuz.</div>
+</div>
+<div class="health-article-img"><img alt="Yüksek Lifli Gıdalar Nelerdir?" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2023/11/jpgcollection-common-food-allergens-people-1.jpg"/></div>
+</div>
+<div class="health-article-body">
+<div class="health-rich-text">
+<h3>Bu konuda bilinmesi gerekenler</h3>
+<p>Lifli gıdalar sindirim sağlığını destekleyen, tokluk hissine katkı sağlayan ve dengeli beslenmede önemli yer tutan besinlerdir. Bu nedenle şikâyetlerin ne zaman başladığı, ne kadar sürdüğü, kişinin yaşı, ek hastalıkları ve günlük yaşamını nasıl etkilediği birlikte değerlendirilmelidir.</p>
+<p>Özel İstanbul Cerrahi Hastanesi’nde ilgili branş değerlendirmesi, gerekli görüldüğünde laboratuvar ve görüntüleme süreçleriyle desteklenir. Amaç; doğru tanıya ulaşmak, hastaya anlaşılır bilgi vermek ve kişiye uygun takip veya tedavi planını oluşturmaktır.</p>
+<h3>Ne zaman doktora başvurulmalı?</h3>
+<ul><li>Şikâyetler günlük yaşamı etkilemeye başladıysa</li><li>Belirtiler tekrarlıyor veya giderek artıyorsa</li><li>Aile öyküsü, kronik hastalık veya risk faktörü varsa</li><li>Daha önce alınan tedavilere rağmen düzelme sağlanmadıysa</li></ul>
+<h3>Süreç nasıl ilerler?</h3>
+<p>İlk değerlendirmede hastanın öyküsü dinlenir, muayene yapılır ve gerekli görülen tetkikler planlanır. Sonuçlara göre tedavi seçenekleri, takip aralıkları ve yaşam tarzı önerileri hekim tarafından kişiye özel şekilde açıklanır.</p>
+</div>
+<aside class="health-article-aside"><span>Randevu ve Bilgi</span><strong>Uzman değerlendirmesi için bizimle iletişime geçebilirsiniz.</strong><a href="../iletisim/index.html">Randevu Talebi Oluştur</a></aside>
+</div>
+</article></div>
+</div>
+<div class="health-archive-grid"><div class="sec-label">Arşiv Önizleme</div><div class="sec-title" style="font-size:28px;margin-bottom:22px">Öne Çıkan Yazılar</div><div class="guide-grid"><a class="guide-card active-nav" data-blog-open="prostat" data-category="Üroloji" href="../saglik-rehberi/index.html" style="--delay:0ms">
+<div class="guide-card-img"><img alt="Prostat Hastalıkları ve Tedavi Yöntemleri" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/prostat-2.jpg.webp"/><span>Üroloji</span></div>
+<div class="guide-card-body"><h3>Prostat Hastalıkları ve Tedavi Yöntemleri</h3><p>Prostat, erkek üreme sisteminde mesanenin altında yer alan ve idrar kanalıyla ilişkili bir bezdir. Yaşla birlikte büyüme, idrar yakınmaları ve farklı prostat hastalıkları gündeme gelebilir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="penil-protez" data-category="Üroloji" href="../saglik-rehberi/index.html" style="--delay:60ms">
+<div class="guide-card-img"><img alt="Penil Protez İmplantasyonu" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/penil-protez.webp"/><span>Üroloji</span></div>
+<div class="guide-card-body"><h3>Penil Protez İmplantasyonu</h3><p>Penil protez implantasyonu, ereksiyon fonksiyonunun ileri düzeyde etkilendiği hastalarda uzman hekim değerlendirmesiyle planlanan cerrahi bir tedavi seçeneğidir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="varikosel" data-category="Üroloji" href="../saglik-rehberi/index.html" style="--delay:120ms">
+<div class="guide-card-img"><img alt="Varikosel: Belirtiler ve Tedavi Yaklaşımı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/varikosel-2.jpg.webp"/><span>Üroloji</span></div>
+<div class="guide-card-body"><h3>Varikosel: Belirtiler ve Tedavi Yaklaşımı</h3><p>Varikosel, testis çevresindeki toplardamarların genişlemesiyle ortaya çıkan ve bazı hastalarda ağrı, ağırlık hissi veya üreme sağlığıyla ilgili sorunlara neden olabilen bir durumdur.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="kolesterol" data-category="İç Hastalıkları" href="../saglik-rehberi/index.html" style="--delay:180ms">
+<div class="guide-card-img"><img alt="Kolesterol Dengesi ve Kalp Damar Sağlığı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/kolesterol-2.jpg.webp"/><span>İç Hastalıkları</span></div>
+<div class="guide-card-body"><h3>Kolesterol Dengesi ve Kalp Damar Sağlığı</h3><p>Kolesterol düzeylerinin dengede tutulması, kalp ve damar sağlığının korunmasında önemli rol oynar. LDL, HDL ve trigliserid değerleri kişinin risk profiliyle birlikte değerlendirilmelidir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="mesane-kanseri" data-category="Üroloji" href="../saglik-rehberi/index.html" style="--delay:240ms">
+<div class="guide-card-img"><img alt="Mesane Kanseri Hakkında Bilinmesi Gerekenler" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/mesane-kanseri.webp"/><span>Üroloji</span></div>
+<div class="guide-card-body"><h3>Mesane Kanseri Hakkında Bilinmesi Gerekenler</h3><p>Mesane kanseri, mesane dokusundaki hücrelerin kontrolsüz çoğalmasıyla gelişebilir. Erken değerlendirme, özellikle idrarda kan görülmesi gibi bulgularda önemlidir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="insulin-direnci" data-category="İç Hastalıkları" href="../saglik-rehberi/index.html" style="--delay:300ms">
+<div class="guide-card-img"><img alt="İnsülin Direnci ve Metabolik Sağlık" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/insulin-2.jpg.webp"/><span>İç Hastalıkları</span></div>
+<div class="guide-card-body"><h3>İnsülin Direnci ve Metabolik Sağlık</h3><p>İnsülin direnci, vücudun insüline verdiği yanıtın azalmasıyla kan şekeri kontrolünün zorlaşmasına neden olabilir. Beslenme, hareket ve medikal takip birlikte değerlendirilir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="bobrek-tasi-lazer" data-category="Üroloji" href="../saglik-rehberi/index.html" style="--delay:0ms">
+<div class="guide-card-img"><img alt="Lazerle Böbrek Taşı Ameliyatı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/lazer-bobrek.webp"/><span>Üroloji</span></div>
+<div class="guide-card-body"><h3>Lazerle Böbrek Taşı Ameliyatı</h3><p>Lazerle böbrek taşı tedavisi, böbrek veya idrar yollarındaki taşların endoskopik yöntemlerle parçalanmasını hedefleyen modern bir yaklaşımdır.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="hipertansiyon" data-category="İç Hastalıkları" href="../saglik-rehberi/index.html" style="--delay:60ms">
+<div class="guide-card-img"><img alt="Hipertansiyon Takibi ve Tedavi Planı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/hipertansiyon.webp"/><span>İç Hastalıkları</span></div>
+<div class="guide-card-body"><h3>Hipertansiyon Takibi ve Tedavi Planı</h3><p>Hipertansiyon, kan basıncının uzun süre normalin üzerinde seyretmesi durumudur. Düzenli ölçüm, yaşam tarzı düzenlemeleri ve hekim kontrolü önemlidir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="laparoskopik-bobrek" data-category="Üroloji" href="../saglik-rehberi/index.html" style="--delay:120ms">
+<div class="guide-card-img"><img alt="Laparoskopik Böbrek Ameliyatı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/laporoskopik-bobrek-kanseri-ameliyatlari.webp"/><span>Üroloji</span></div>
+<div class="guide-card-body"><h3>Laparoskopik Böbrek Ameliyatı</h3><p>Laparoskopik böbrek ameliyatları, uygun hastalarda küçük kesilerle yapılan ve iyileşme konforunu destekleyebilen cerrahi yöntemler arasında yer alır.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="holep" data-category="Üroloji" href="../saglik-rehberi/index.html" style="--delay:180ms">
+<div class="guide-card-img"><img alt="HoLEP Tedavisi" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/holep.webp"/><span>Üroloji</span></div>
+<div class="guide-card-body"><h3>HoLEP Tedavisi</h3><p>HoLEP, iyi huylu prostat büyümesinde kullanılan lazer teknolojili cerrahi yöntemlerden biridir. Tedavi planı prostat boyutu ve hastanın bulgularına göre yapılır.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="diyabet" data-category="İç Hastalıkları" href="../saglik-rehberi/index.html" style="--delay:240ms">
+<div class="guide-card-img"><img alt="Diyabet Yönetimi" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/diyabet-cerrahisi.webp"/><span>İç Hastalıkları</span></div>
+<div class="guide-card-body"><h3>Diyabet Yönetimi</h3><p>Diyabet, kan şekeri dengesinin bozulmasıyla ilerleyen kronik bir sağlık durumudur. Düzenli takip, beslenme planı ve medikal tedavi kişiye göre düzenlenir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="endoskopik-tas" data-category="Üroloji" href="../saglik-rehberi/index.html" style="--delay:300ms">
+<div class="guide-card-img"><img alt="Endoskopik Taş Ameliyatları" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/endoskopik-tas-ameliyatlari.webp"/><span>Üroloji</span></div>
+<div class="guide-card-body"><h3>Endoskopik Taş Ameliyatları</h3><p>Endoskopik taş ameliyatları, idrar yollarındaki taşların kamera destekli kapalı yöntemlerle tedavi edilmesini sağlayan girişimlerdir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="el-boyun-genclestirme" data-category="Dermatoloji" href="../saglik-rehberi/index.html" style="--delay:0ms">
+<div class="guide-card-img"><img alt="El ve Boyun Gençleştirme Tedavisi" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/el-ve-boyun-genclestirme.webp"/><span>Dermatoloji</span></div>
+<div class="guide-card-body"><h3>El ve Boyun Gençleştirme Tedavisi</h3><p>El ve boyun bölgesi, yaşlanma belirtilerinin sık görüldüğü alanlardır. Uygulama planı cilt kalitesi, elastikiyet ve kişinin beklentilerine göre şekillenir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="sirt-emari" data-category="Radyoloji" href="../saglik-rehberi/index.html" style="--delay:60ms">
+<div class="guide-card-img"><img alt="Sırt Emarı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/sirt-emari.webp"/><span>Radyoloji</span></div>
+<div class="guide-card-body"><h3>Sırt Emarı</h3><p>Sırt emarı, omurga ve çevre dokuların ayrıntılı görüntülenmesine yardımcı olan manyetik rezonans yöntemlerinden biridir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="omur-emar" data-category="Radyoloji" href="../saglik-rehberi/index.html" style="--delay:120ms">
+<div class="guide-card-img"><img alt="Omur Emar" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/omur-emar.webp"/><span>Radyoloji</span></div>
+<div class="guide-card-body"><h3>Omur Emar</h3><p>Omur emar, omurga yapısı, diskler, sinir kanalları ve çevre yumuşak dokuların değerlendirilmesinde kullanılan görüntüleme yöntemidir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="colyak" data-category="İç Hastalıkları" href="../saglik-rehberi/index.html" style="--delay:180ms">
+<div class="guide-card-img"><img alt="Çölyak Hastalığı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/colyak-hastaligi-2.jpg.webp"/><span>İç Hastalıkları</span></div>
+<div class="guide-card-body"><h3>Çölyak Hastalığı</h3><p>Çölyak hastalığı, gluten içeren gıdalara karşı bağışıklık temelli yanıtla ortaya çıkan ve bağırsak sağlığını etkileyebilen bir durumdur.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="kalca-emar" data-category="Radyoloji" href="../saglik-rehberi/index.html" style="--delay:240ms">
+<div class="guide-card-img"><img alt="Kalça Emar" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/kalca-emar.webp"/><span>Radyoloji</span></div>
+<div class="guide-card-body"><h3>Kalça Emar</h3><p>Kalça emarı, kalça eklemi ve çevresindeki yumuşak dokuların detaylı incelenmesine olanak sağlayan görüntüleme yöntemidir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="diz-emar" data-category="Radyoloji" href="../saglik-rehberi/index.html" style="--delay:300ms">
+<div class="guide-card-img"><img alt="Diz Emar" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/diz-emari.webp"/><span>Radyoloji</span></div>
+<div class="guide-card-body"><h3>Diz Emar</h3><p>Diz emarı, menisküs, bağlar, kıkırdak yapılar ve eklem çevresindeki dokuların değerlendirilmesinde kullanılır.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="anemi" data-category="İç Hastalıkları" href="../saglik-rehberi/index.html" style="--delay:0ms">
+<div class="guide-card-img"><img alt="Anemi Belirtileri ve Tedavi Yaklaşımı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/anemi-2.jpg.webp"/><span>İç Hastalıkları</span></div>
+<div class="guide-card-body"><h3>Anemi Belirtileri ve Tedavi Yaklaşımı</h3><p>Anemi; halsizlik, yorgunluk, baş dönmesi, nefes darlığı ve solukluk gibi belirtilerle kendini gösterebilir. Nedenin belirlenmesi tedavi planı için önemlidir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="boyun-emari" data-category="Radyoloji" href="../saglik-rehberi/index.html" style="--delay:60ms">
+<div class="guide-card-img"><img alt="Boyun Emarı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/boyun-emari.webp"/><span>Radyoloji</span></div>
+<div class="guide-card-body"><h3>Boyun Emarı</h3><p>Boyun emarı, boyun omurları, diskler, sinir kökleri ve çevre yumuşak dokuların detaylı görüntülenmesini sağlar.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="beyin-emari" data-category="Radyoloji" href="../saglik-rehberi/index.html" style="--delay:120ms">
+<div class="guide-card-img"><img alt="Beyin Emarı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/beyin-emari.webp"/><span>Radyoloji</span></div>
+<div class="guide-card-body"><h3>Beyin Emarı</h3><p>Beyin emarı, beyin dokusunun ayrıntılı incelenmesine yardımcı olan ve birçok nörolojik durumun değerlendirilmesinde kullanılan görüntüleme yöntemidir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="kardiyoloji" data-category="Kardiyoloji" href="../saglik-rehberi/index.html" style="--delay:180ms">
+<div class="guide-card-img"><img alt="Kardiyoloji Muayenesi" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/kardiyoloji.png.webp"/><span>Kardiyoloji</span></div>
+<div class="guide-card-body"><h3>Kardiyoloji Muayenesi</h3><p>Kardiyoloji, kalp ve damar sisteminin sağlığını inceleyen; ritim bozukluğu, hipertansiyon, göğüs ağrısı ve kalp damar risklerini değerlendiren uzmanlık alanıdır.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="enfeksiyon" data-category="Enfeksiyon Hastalıkları" href="../saglik-rehberi/index.html" style="--delay:240ms">
+<div class="guide-card-img"><img alt="Enfeksiyon Hastalıkları" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/enfeksiyon-2.png.webp"/><span>Enfeksiyon Hastalıkları</span></div>
+<div class="guide-card-body"><h3>Enfeksiyon Hastalıkları</h3><p>Enfeksiyon hastalıkları, mikroorganizmaların neden olduğu sağlık sorunlarının tanı, tedavi ve korunma süreçlerini kapsar.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="safra-kesesi" data-category="Genel Cerrahi" href="../saglik-rehberi/index.html" style="--delay:300ms">
+<div class="guide-card-img"><img alt="Safra Kesesi Ameliyatı" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2026/03/safra-kesesi-2-na.jpg.webp"/><span>Genel Cerrahi</span></div>
+<div class="guide-card-body"><h3>Safra Kesesi Ameliyatı</h3><p>Safra kesesi taşları ve safra kesesiyle ilişkili şikâyetler uygun hastalarda cerrahi değerlendirme gerektirebilir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="dis-beyazlatma" data-category="Ağız ve Diş Sağlığı" href="../saglik-rehberi/index.html" style="--delay:0ms">
+<div class="guide-card-img"><img alt="Diş Beyazlatma Nedir?" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2023/11/woman-whitening-treatment-scaled.jpg"/><span>Ağız ve Diş Sağlığı</span></div>
+<div class="guide-card-body"><h3>Diş Beyazlatma Nedir?</h3><p>Diş beyazlatma, diş renginin daha açık ve estetik görünmesine yardımcı olan uygulamalardan biridir. İşlem öncesi ağız ve diş sağlığı değerlendirilmelidir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="agiz-kokusu" data-category="Ağız ve Diş Sağlığı" href="../saglik-rehberi/index.html" style="--delay:60ms">
+<div class="guide-card-img"><img alt="Ağız Kokusu Nasıl Geçer?" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2023/11/brunette-female-30s-covering-mouth-with-both-hands-keeping-silence-faithful-lady-friend-promising-tell-secrets-being-trustworthy-people-attitude-concept-scaled.jpg"/><span>Ağız ve Diş Sağlığı</span></div>
+<div class="guide-card-body"><h3>Ağız Kokusu Nasıl Geçer?</h3><p>Ağız kokusu; ağız hijyeni, diş eti hastalıkları, beslenme, mide-bağırsak sistemi ve sistemik durumlarla ilişkili olabilir. Nedenin belirlenmesi önemlidir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="stres" data-category="Psikoloji" href="../saglik-rehberi/index.html" style="--delay:120ms">
+<div class="guide-card-img"><img alt="Stres Nedir, Neden Olur?" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2023/11/stress-topic-landing-page-tile_tcm7-278182_w1024_n.jpg"/><span>Psikoloji</span></div>
+<div class="guide-card-body"><h3>Stres Nedir, Neden Olur?</h3><p>Stres, kişinin bedensel ve zihinsel yüklenmelere verdiği doğal yanıttır. Uzun sürdüğünde uyku, iştah, duygu durumu ve yaşam kalitesi üzerinde etkili olabilir.</p><strong>Devamını Oku →</strong></div>
+</a>
+<a class="guide-card active-nav" data-blog-open="lifli-gidalar" data-category="Beslenme ve Diyet" href="../saglik-rehberi/index.html" style="--delay:180ms">
+<div class="guide-card-img"><img alt="Yüksek Lifli Gıdalar Nelerdir?" onerror="this.style.opacity='.25'" src="https://istanbulcerrahi.com/wp-content/uploads/2023/11/jpgcollection-common-food-allergens-people-1.jpg"/><span>Beslenme ve Diyet</span></div>
+<div class="guide-card-body"><h3>Yüksek Lifli Gıdalar Nelerdir?</h3><p>Lifli gıdalar sindirim sağlığını destekleyen, tokluk hissine katkı sağlayan ve dengeli beslenmede önemli yer tutan besinlerdir.</p><strong>Devamını Oku →</strong></div>
+</a></div></div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="f-brand">
+<div class="f-logo">
+<img alt="Özel İstanbul Cerrahi Hastanesi" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" src="../assets/img/logo.png"/>
+<div class="f-logo-fallback" style="display:none"><div class="f-logo-mark"><svg viewbox="0 0 24 24"><path d="M12 2L3 7v10l9 5 9-5V7L12 2z"></path></svg></div><div class="f-logo-name">Özel İstanbul Cerrahi Hastanesi</div></div>
+</div>
+<p class="f-desc">Fulya, Şişli’de konumlanan Özel İstanbul Cerrahi Hastanesi; güven, kalite ve hasta odaklı hizmet anlayışıyla yanınızdadır.</p>
+<div class="f-social">
+<a class="f-soc-btn" href="https://www.facebook.com/istanbulcerrahihastanesi" target="_blank"><svg viewbox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg></a>
+<a class="f-soc-btn" href="https://www.instagram.com/istanbulcerrahihastanesi/" target="_blank"><svg viewbox="0 0 24 24"><rect height="20" rx="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+<a class="f-soc-btn" href="https://www.youtube.com/@istanbulcerrahi" target="_blank"><svg viewbox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"></path><polygon fill="white" points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" stroke="none"></polygon></svg></a>
+<a class="f-soc-btn" href="https://wa.me/905316507657" target="_blank"><svg viewbox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg></a>
+</div>
+</div>
+<div>
+<div class="f-col-title">Kurumsal</div>
+<div class="f-links">
+<a href="../kurumsal/index.html">Hakkımızda</a>
+<a href="../kurumsal/index.html">Vizyon &amp; Misyon</a>
+<a href="#sss">Anlaşmalı Kurumlar</a>
+<a href="../iletisim/index.html">Banka Hesap Numaraları</a>
+<a href="../iletisim/index.html">İletişim</a>
+</div>
+</div>
+<div>
+<div class="f-col-title">Tıbbi Birimler</div>
+<div class="f-links">
+<a href="../tibbi-birimler/index.html">Obezite Cerrahisi</a>
+<a href="../tibbi-birimler/index.html">Estetik Cerrahi</a>
+<a href="../tibbi-birimler/index.html">Kadın Hastalıkları</a>
+<a href="../tibbi-birimler/index.html">Ortopedi</a>
+<a href="../tibbi-birimler/index.html">Tüm Birimler →</a>
+</div>
+</div>
+<div>
+<div class="f-col-title">Hasta Hizmetleri</div>
+<div class="f-links">
+<a href="../iletisim/index.html">Online Randevu</a>
+<a href="../hasta-rehberi/index.html">Hasta Rehberi</a>
+<a class="active-nav" href="../saglik-rehberi/index.html">Sağlık Rehberi</a>
+<a data-patient-open="anlasmali" href="../hasta-rehberi/index.html">Sigorta &amp; Anlaşmalar</a>
+<a href="tel:02122969450">0212 296 94 50</a>
+</div>
+</div>
+</div>
+<div class="f-bottom">
+<div class="f-copy">© 2026 Özel İstanbul Cerrahi Hastanesi. Tüm hakları saklıdır. | Sayfa içeriği sadece bilgilendirme amaçlıdır.</div>
+<div class="f-badges"><span class="f-badge">SGK Anlaşmalı</span><span class="f-badge">ÖSS Anlaşmalı</span><span class="f-badge">TSS Anlaşmalı</span></div>
+</div>
+</div>
+</footer>
+<div class="float-wa">
+<a class="float-btn float-btn-wa" href="https://wa.me/905316507657?text=Merhaba%20bilgi%20almak%20istiyorum" target="_blank" title="WhatsApp">
+<svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+<a class="float-btn float-btn-phone" href="tel:02122969450" title="Hemen Ara">
+<svg viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.63 6.63l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+{
+  "toygar": {
+    "name": "Prof. Dr. Toygar TOYDEMİR",
+    "branch": "Genel Cerrahi — Obezite & Reflü Cerrahisi",
+    "photo": "https://istanbulcerrahi.com/wp-content/uploads/2025/12/dr-toygar-toydemir.webp",
+    "videoTr": null,
+    "videoEn": null,
+    "introTr": "Prof. Dr. Toygar TOYDEMİR, Özel İstanbul Cerrahi Hastanesi Genel Cerrahi Bölümü'nde görev yapmaktadır. Obezite ve reflü cerrahisi alanlarında yoğun deneyime sahiptir. 2013 yılında New York Lenox Hill Hastanesi'nde dünya eksperi Dr. Mitchell Roslin ile revizyonel bariatrik cerrahi üzerine çalışmış, ABD'deki bariatrik cerrahi alanındaki yenilikleri yakından takip etmiştir. 2015'te doçent, 2020'de Genel Cerrahi Profesörü unvanını almıştır.",
+    "introEn": "Prof. Dr. Toygar TOYDEMİR serves in the General Surgery Department of Özel İstanbul Cerrahi Hastanesi. He has extensive experience in obesity and reflux surgery. In 2013, he worked with world-renowned expert Dr. Mitchell Roslin at New York Lenox Hill Hospital on revisional bariatric surgery, closely following innovations in bariatric surgery in the USA. He received his associate professor title in 2015 and became a Professor of General Surgery in 2020.",
+    "cv": [
+      {
+        "title": "Genel Cerrahi Profesörü",
+        "sub": "Özel İstanbul Cerrahi Hastanesi · 2020 – Günümüz"
+      },
+      {
+        "title": "Doçent, Genel Cerrahi",
+        "sub": "2015 – 2020"
+      },
+      {
+        "title": "Türk Cerrahi Derneği Yeterlik Belgesi",
+        "sub": "2010 yılında yazılı ve sözlü sınavları başarıyla tamamladı"
+      },
+      {
+        "title": "Asistan Doktor",
+        "sub": "Şişli Etfal Eğitim ve Araştırma Hastanesi"
+      }
+    ],
+    "egitim": [
+      {
+        "title": "Tıp Fakültesi",
+        "sub": "Ege Üniversitesi Tıp Fakültesi"
+      },
+      {
+        "title": "Uzmanlık Eğitimi",
+        "sub": "Şişli Etfal Eğitim ve Araştırma Hastanesi"
+      },
+      {
+        "title": "Fellowship — Bariatrik Cerrahi",
+        "sub": "Lenox Hill Hospital, New York · 2013"
+      }
+    ],
+    "uzmanlik": [
+      "Obezite Cerrahisi",
+      "Sleeve Gastrektomi",
+      "Gastrik Bypass",
+      "Revizyonel Bariatrik Cerrahi",
+      "Reflü Cerrahisi",
+      "Laparoskopik Cerrahi",
+      "Metabolik Cerrahi"
+    ],
+    "yayinlar": [
+      {
+        "title": "Türk Cerrahi Derneği Yeterlik Belgesi",
+        "sub": "Yazılı ve Sözlü Sınav · 2010"
+      },
+      {
+        "title": "Revizyonel Bariatrik Cerrahi Çalışması",
+        "sub": "Lenox Hill Hospital, New York · 2013"
+      }
+    ]
+  },
+  "elif": {
+    "name": "Uzm. Dr. Elif Gökçen VATANOĞLU",
+    "branch": "Kardiyoloji",
+    "photo": "https://istanbulcerrahi.com/wp-content/uploads/2025/11/dr-elif-gokcen-vatanoglu.webp",
+    "videoTr": null,
+    "videoEn": null,
+    "introTr": "Uzm. Dr. Elif Gökçen VATANOĞLU, Özel İstanbul Cerrahi Hastanesi Kardiyoloji Bölümü'nde görev yapmaktadır. İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi mezunu olan Dr. VATANOĞLU, Siyami Ersek Göğüs Kalp ve Damar Cerrahisi Eğitim ve Araştırma Hastanesi'nde ihtisasını tamamlamıştır.",
+    "introEn": "Dr. Elif Gökçen VATANOĞLU serves in the Cardiology Department at Özel İstanbul Cerrahi Hastanesi. A graduate of İstanbul University Cerrahpaşa Faculty of Medicine, she completed her specialization at Siyami Ersek Thoracic and Cardiovascular Surgery Training and Research Hospital.",
+    "cv": [
+      {
+        "title": "Kardiyoloji Uzmanı",
+        "sub": "Özel İstanbul Cerrahi Hastanesi · Günümüz"
+      },
+      {
+        "title": "Tıpta Uzmanlık — Kardiyoloji",
+        "sub": "Siyami Ersek Göğüs Kalp ve Damar Cerrahisi Hastanesi"
+      }
+    ],
+    "egitim": [
+      {
+        "title": "Tıp Doktoru (MD)",
+        "sub": "İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi · 2009 – 2015"
+      },
+      {
+        "title": "Tıpta Uzmanlık — Kardiyoloji",
+        "sub": "Siyami Ersek Göğüs Kalp ve Damar Cerrahisi Eğitim ve Araştırma Hastanesi"
+      }
+    ],
+    "uzmanlik": [
+      "Ekokardiyografi",
+      "Kardiyolojik Muayene",
+      "Kalp Yetmezliği",
+      "Hipertansiyon Tedavisi",
+      "Ritim Bozuklukları",
+      "Koroner Arter Hastalıkları"
+    ],
+    "yayinlar": []
+  },
+  "suheda": {
+    "name": "Op. Dr. Şuheda ÇILDIR",
+    "branch": "Estetik ve Plastik Cerrahi",
+    "photo": "https://istanbulcerrahi.com/wp-content/uploads/2025/12/dr-suheda-cildir.webp",
+    "videoTr": null,
+    "videoEn": null,
+    "introTr": "Op. Dr. Şuheda ÇILDIR, Özel İstanbul Cerrahi Hastanesi Plastik, Rekonstrüktif ve Estetik Cerrahi Bölümü'nde görev yapmaktadır. Sağlık Bilimleri Üniversitesi Kartal Dr. Lütfi Kırdar Şehir Hastanesi'nde uzmanlık eğitimini tamamlamıştır.",
+    "introEn": "Op. Dr. Şuheda ÇILDIR serves in the Plastic, Reconstructive and Aesthetic Surgery Department at Özel İstanbul Cerrahi Hastanesi. She completed her specialization training at Kartal Dr. Lütfi Kırdar City Hospital, University of Health Sciences.",
+    "cv": [
+      {
+        "title": "Estetik ve Plastik Cerrahi Uzmanı",
+        "sub": "Özel İstanbul Cerrahi Hastanesi · Günümüz"
+      },
+      {
+        "title": "Tıpta Uzmanlık — Plastik Cerrahi",
+        "sub": "Sağlık Bilimleri Ünv. Kartal Dr. Lütfi Kırdar Şehir Hastanesi · 2018–2023"
+      }
+    ],
+    "egitim": [
+      {
+        "title": "Tıpta Uzmanlık — Plastik Rekonstrüktif ve Estetik Cerrahi",
+        "sub": "Sağlık Bilimleri Üniversitesi Kartal Dr. Lütfi Kırdar Şehir Hastanesi · 2018–2023"
+      }
+    ],
+    "uzmanlik": [
+      "Rinoplasti",
+      "Meme Estetiği",
+      "Liposuction",
+      "Yüz Germe",
+      "Göz Kapağı Estetiği",
+      "Rekonstrüktif Cerrahi",
+      "Dolgu & Botoks"
+    ],
+    "yayinlar": []
+  },
+  "ibrahim": {
+    "name": "Uzm. Dr. İbrahim Cem HEKİMOĞLU",
+    "branch": "Dermatoloji",
+    "photo": "https://istanbulcerrahi.com/wp-content/uploads/2025/12/uzm-dr-ibrahim-cem.webp",
+    "videoTr": null,
+    "videoEn": null,
+    "introTr": "Uzm. Dr. İbrahim Cem HEKİMOĞLU, Özel İstanbul Cerrahi Hastanesi Dermatoloji Bölümü'nde görev yapmaktadır. Cilt hastalıklarının tanı ve tedavisinde geniş deneyime sahip olan Dr. HEKİMOĞLU, medikal ve estetik dermatoloji alanlarında hizmet vermektedir.",
+    "introEn": "Dr. İbrahim Cem HEKİMOĞLU serves in the Dermatology Department at Özel İstanbul Cerrahi Hastanesi. He has extensive experience in the diagnosis and treatment of skin diseases, providing services in both medical and aesthetic dermatology.",
+    "cv": [
+      {
+        "title": "Dermatoloji Uzmanı",
+        "sub": "Özel İstanbul Cerrahi Hastanesi · Günümüz"
+      }
+    ],
+    "egitim": [
+      {
+        "title": "Tıpta Uzmanlık — Dermatoloji",
+        "sub": "İstanbul"
+      }
+    ],
+    "uzmanlik": [
+      "Akne Tedavisi",
+      "Egzama",
+      "Sedef Hastalığı",
+      "Saç Dökülmesi",
+      "Medikal Dermatoloji",
+      "Estetik Dermatoloji",
+      "Lazer Uygulamaları",
+      "Cilt Kanseri Taraması"
+    ],
+    "yayinlar": []
+  },
+  "okkes": {
+    "name": "Op. Dr. Ökkeş Celil GÖKÇEK",
+    "branch": "Beyin ve Sinir Cerrahisi",
+    "photo": "https://istanbulcerrahi.com/wp-content/uploads/2026/03/op-dr-okkes-celil-gokcek.webp",
+    "videoTr": null,
+    "videoEn": null,
+    "introTr": "Op. Dr. Ökkeş Celil GÖKÇEK, Özel İstanbul Cerrahi Hastanesi Beyin ve Sinir Cerrahisi bölümünde görev yapmaktadır. Beyin, omurga ve sinir sistemi hastalıklarının tanı, tedavi ve cerrahi planlama süreçlerinde hasta odaklı yaklaşım sunar.",
+    "introEn": "Op. Dr. Ökkeş Celil GÖKÇEK serves in the Neurosurgery Department at Özel İstanbul Cerrahi Hastanesi. He provides patient-centered evaluation and surgical planning for brain, spine and nervous system conditions.",
+    "cv": [
+      {
+        "title": "Beyin ve Sinir Cerrahisi Uzmanı",
+        "sub": "Özel İstanbul Cerrahi Hastanesi · Günümüz"
+      }
+    ],
+    "egitim": [
+      {
+        "title": "Tıpta Uzmanlık — Beyin ve Sinir Cerrahisi",
+        "sub": "Türkiye"
+      }
+    ],
+    "uzmanlik": [
+      "Beyin ve Sinir Cerrahisi",
+      "Omurga Hastalıkları",
+      "Bel ve Boyun Fıtığı",
+      "Sinir Sıkışmaları",
+      "Cerrahi Değerlendirme"
+    ],
+    "yayinlar": []
+  },
+  "leyla": {
+    "name": "Uzm. Dr. Leyla GULİYEVA",
+    "branch": "İç Hastalıkları",
+    "photo": "https://istanbulcerrahi.com/wp-content/uploads/2025/11/dr-leyla-guliyeva-dahiliye.webp",
+    "videoTr": null,
+    "videoEn": null,
+    "introTr": "Uzm. Dr. Leyla GULİYEVA, Özel İstanbul Cerrahi Hastanesi İç Hastalıkları bölümünde görev yapmaktadır. Dahili hastalıkların tanı, takip ve yönlendirme süreçlerinde bütüncül değerlendirme yaklaşımıyla hizmet sunar.",
+    "introEn": "Dr. Leyla GULİYEVA serves in the Internal Medicine Department at Özel İstanbul Cerrahi Hastanesi, providing holistic evaluation for diagnosis, follow-up and treatment planning.",
+    "cv": [
+      {
+        "title": "İç Hastalıkları Uzmanı",
+        "sub": "Özel İstanbul Cerrahi Hastanesi · Günümüz"
+      }
+    ],
+    "egitim": [
+      {
+        "title": "Tıpta Uzmanlık — İç Hastalıkları",
+        "sub": "Türkiye"
+      }
+    ],
+    "uzmanlik": [
+      "Dahiliye",
+      "Kronik Hastalık Takibi",
+      "Metabolik Değerlendirme",
+      "Check-up",
+      "Tetkik ve Tanı Planlama"
+    ],
+    "yayinlar": []
+  },
+  "ferhat": {
+    "name": "Dr. Ferhat ASLAN",
+    "branch": "Acil Servis",
+    "photo": "https://istanbulcerrahi.com/wp-content/uploads/2023/12/dr-ferhat-aslan-1.webp",
+    "videoTr": null,
+    "videoEn": null,
+    "introTr": "Dr. Ferhat ASLAN, Özel İstanbul Cerrahi Hastanesi Acil Servis bölümünde görev yapmaktadır. Acil başvuruların ilk değerlendirme, stabilizasyon ve ilgili branşa yönlendirme süreçlerinde görev alır.",
+    "introEn": "Dr. Ferhat ASLAN serves in the Emergency Department at Özel İstanbul Cerrahi Hastanesi, supporting initial evaluation, stabilization and referral processes.",
+    "cv": [
+      {
+        "title": "Acil Servis Hekimi",
+        "sub": "Özel İstanbul Cerrahi Hastanesi · Günümüz"
+      }
+    ],
+    "egitim": [
+      {
+        "title": "Tıp Eğitimi",
+        "sub": "Türkiye"
+      }
+    ],
+    "uzmanlik": [
+      "Acil Servis",
+      "İlk Değerlendirme",
+      "Triyaj",
+      "Hasta Stabilizasyonu",
+      "Branş Yönlendirmesi"
+    ],
+    "yayinlar": []
+  }
+}
